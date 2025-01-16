@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.svg" sizes="any" type="image/svg+xml">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240613094856" />
+    <link rel="stylesheet" href="css/style.min.css?_v=20240613094856">
+    <title>Элитная городская недвижимость</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a href="index.html" class="header__logo"><img src="img/logo.svg" alt="logo-plots"></a>
+                <nav id="menu" class="header__nav menu">
+                    <div class="menu__items">
+                        <div class="menu__item">
+                            <div class="menu__name">О компании</div>
+                            <div class="menu__elems">
+                                <a href="about.html" class="menu__elem">О компании</a>
+                                <a href="about.html#location" class="menu__elem">Карта предложений</a>
+                                <a href="about.html#services" class="menu__elem">Уcлуги</a>
+                            </div>
+                        </div>
+                        <div class="menu__item"><a href="catalog-plots.html">Участки</a></div>
+                        <div class="menu__item"><a href="catalog-plots_house.html">Участки с домами</a></div>
+                        <div class="menu__item"><a href="urban-estate.html">Элитная городская недвижимость</a></div>
+                        <div class="menu__item">
+                            <div class="menu__name">Покупателям</div>
+                            <div class="menu__elems">
+                                <a href="terms_of_purchase.html" class="menu__elem">Условия покупки</a>
+                                <a href="questions.html" class="menu__elem">Часто задаваемые вопросы</a>
+                                <a href="stock.html" class="menu__elem">Акции</a>
+                            </div>
+                        </div>
+                        <div class="menu__item"><a href="contact.html">Контакты</a></div>
+                    </div>
+                    <div class="menu__info">
+                        <a href="#" class="menu__phone">+7 (495) 120 60 09</a>
+                        <div class="menu__sub-text">пн-вс с 10:00 до 19:00</div>
+                        <div class="menu__sub-mail">info@plots.ru / sen@plots.ru</div>
+                    </div>
+                </nav>
+                <div class="menu__m-info">
+                    <a href="#" class="menu__phone">+7 (495) 120 60 09</a>
+                    <div class="menu__sub-text">пн-вс с 10:00 до 19:00</div>
+                    <div class="menu__sub-mail">info@plots.ru / sen@plots.ru</div>
+                </div>
+                <div id="burger" class="header__burger">
+                    <span></span>
+                </div>
+            </div>
+        </header>
+        <main>
+            <!-- Заголовок -->
+            <section class="welcome" style="background-image: url('img/welcome_3-bg.png');">
+                <div class="welcome__container">
+                    <h2 class="welcome__title">Элитная городская недвижимость</h2>
+                    <h3 class="welcome__sub-title">22 предложения</h3>
+                    <div class="welcome__img"><img src="img/welcome-logo.svg" alt=""></div>
+                </div>
+            </section>
+            <!-- Заголовок -->
+            <!-- Фильтер -->
+            <section class="filter _version">
+                <div class="filter__container">
+                    <div class="filter__items">
+                        <div class="filter__item">
+                            <label for="#" class="filter__name">Районы</label>
+                            <div class="name__box">
+                                <div class="name__value">
+                                    Остоженка
+                                </div>
+                                <div class="name__lead">
+                                    <ul>
+                                        <li>Остоженка</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter__item">
+                            <label for="#" class="filter__name">Число комнат</label>
+                            <div class="filter__inputs">
+                                <div class="filter__input _version"><input type="text" placeholder="1"></div>
+                                <div class="filter__input _version"><input type="text" placeholder="20"></div>
+                            </div>
+                        </div>
+                        <div class="filter__item">
+                            <label for="#" class="filter__name">Площадь, м2</label>
+                            <div class="filter__inputs">
+                                <div class="filter__input"><input type="text" placeholder="1"></div>
+                                <div class="filter__input"><input type="text" placeholder="1000"></div>
+                            </div>
+                        </div>
+                        <div class="filter__item">
+                            <label for="#" class="filter__name">Стоимость в долларах</label>
+                            <div class="filter__inputs">
+                                <div class="filter__input"><input type="text" placeholder="1 000 000"></div>
+                                <div class="filter__input"><input type="text" placeholder="50 000 000"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter__search">
+                        <button>
+                            <span>На карте</span>
+                            <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_618_851)">
+                                    <path
+                                        d="M15.75 7.91675C15.75 13.4584 9 18.2084 9 18.2084C9 18.2084 2.25 13.4584 2.25 7.91675C2.25 6.02708 2.96116 4.21481 4.22703 2.87861C5.4929 1.54242 7.20979 0.791748 9 0.791748C10.7902 0.791748 12.5071 1.54242 13.773 2.87861C15.0388 4.21481 15.75 6.02708 15.75 7.91675Z"
+                                        stroke="#8DAE3E" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M9 10.2917C10.2426 10.2917 11.25 9.22842 11.25 7.91675C11.25 6.60507 10.2426 5.54175 9 5.54175C7.75736 5.54175 6.75 6.60507 6.75 7.91675C6.75 9.22842 7.75736 10.2917 9 10.2917Z"
+                                        stroke="#8DAE3E" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_618_851">
+                                        <rect width="18" height="19" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </div>
+                    <a href="#" class="filter__reset">
+                        Сбросить фильтр
+                    </a>
+                </div>
+            </section>
+            <!-- Фильтер -->
+            <!-- Каталог участков -->
+            <section class="catalog-plots">
+                <div class="catalog-plots__container">
+                    <div class="catalog-plots__items">
+                        <div class="catalog-plots__item">
+                            <div class="catalog-plots__image">
+                                <picture>
+                                    <source srcset="img/catalog-plots_2.webp" type="image/webp"><img
+                                        src="img/catalog-plots_2.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="catalog-plots__info">
+                                <h3 class="catalog-plots__title">КВАРТИРА</h3>
+                                <h4 class="catalog-plots__sub-title">20 <span>КОМНАТ</span> / 1000
+                                    <span>М<sup>2</sup></span> / 3 <span>ЭТАЖ</span>
+                                </h4>
+                                <div class="catalog-plots__wrap">
+                                    <div class="catalog-plots__lead">Район:</div>
+                                    <div class="catalog-plots__text">Остоженка</div>
+                                </div>
+                                <div class="catalog-plots__wrap">
+                                    <div class="catalog-plots__lead">Адрес:</div>
+                                    <div class="catalog-plots__text _version">м. Кропоткинская, Молочный пер. 7, Москва,
+                                        Россия</div>
+                                </div>
+                                <div class="catalog-plots__btn">Цена по запросу</div>
+                            </div>
+                        </div>
+                        <div class="catalog-plots__item">
+                            <div class="catalog-plots__image">
+                                <picture>
+                                    <source srcset="img/catalog-plots_2.webp" type="image/webp"><img
+                                        src="img/catalog-plots_2.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="catalog-plots__info">
+                                <h3 class="catalog-plots__title">КВАРТИРА</h3>
+                                <h4 class="catalog-plots__sub-title">20 <span>КОМНАТ</span> / 1000
+                                    <span>М<sup>2</sup></span> / 3 <span>ЭТАЖ</span>
+                                </h4>
+                                <div class="catalog-plots__wrap">
+                                    <div class="catalog-plots__lead">Район:</div>
+                                    <div class="catalog-plots__text">Остоженка</div>
+                                </div>
+                                <div class="catalog-plots__wrap">
+                                    <div class="catalog-plots__lead">Адрес:</div>
+                                    <div class="catalog-plots__text _version">м. Кропоткинская, Молочный пер. 7, Москва,
+                                        Россия</div>
+                                </div>
+                                <div class="catalog-plots__btn">Цена по запросу</div>
+                            </div>
+                        </div>
+                        <div class="catalog-plots__item">
+                            <div class="catalog-plots__image">
+                                <picture>
+                                    <source srcset="img/catalog-plots_2.webp" type="image/webp"><img
+                                        src="img/catalog-plots_2.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="catalog-plots__info">
+                                <h3 class="catalog-plots__title">КВАРТИРА</h3>
+                                <h4 class="catalog-plots__sub-title">20 <span>КОМНАТ</span> / 1000
+                                    <span>М<sup>2</sup></span> / 3 <span>ЭТАЖ</span>
+                                </h4>
+                                <div class="catalog-plots__wrap">
+                                    <div class="catalog-plots__lead">Район:</div>
+                                    <div class="catalog-plots__text">Остоженка</div>
+                                </div>
+                                <div class="catalog-plots__wrap">
+                                    <div class="catalog-plots__lead">Адрес:</div>
+                                    <div class="catalog-plots__text _version">м. Кропоткинская, Молочный пер. 7, Москва,
+                                        Россия</div>
+                                </div>
+                                <div class="catalog-plots__btn">Цена по запросу</div>
+                            </div>
+                        </div>
+                        <div class="catalog-plots__item">
+                            <div class="catalog-plots__image">
+                                <picture>
+                                    <source srcset="img/catalog-plots_2.webp" type="image/webp"><img
+                                        src="img/catalog-plots_2.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="catalog-plots__info">
+                                <h3 class="catalog-plots__title">КВАРТИРА</h3>
+                                <h4 class="catalog-plots__sub-title">20 <span>КОМНАТ</span> / 1000
+                                    <span>М<sup>2</sup></span> / 3 <span>ЭТАЖ</span>
+                                </h4>
+                                <div class="catalog-plots__wrap">
+                                    <div class="catalog-plots__lead">Район:</div>
+                                    <div class="catalog-plots__text">Остоженка</div>
+                                </div>
+                                <div class="catalog-plots__wrap">
+                                    <div class="catalog-plots__lead">Адрес:</div>
+                                    <div class="catalog-plots__text _version">м. Кропоткинская, Молочный пер. 7, Москва,
+                                        Россия</div>
+                                </div>
+                                <div class="catalog-plots__btn">Цена по запросу</div>
+                            </div>
+                        </div>
+                        <div class="catalog-plots__item">
+                            <div class="catalog-plots__image">
+                                <picture>
+                                    <source srcset="img/catalog-plots_2.webp" type="image/webp"><img
+                                        src="img/catalog-plots_2.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="catalog-plots__info">
+                                <h3 class="catalog-plots__title">КВАРТИРА</h3>
+                                <h4 class="catalog-plots__sub-title">20 <span>КОМНАТ</span> / 1000
+                                    <span>М<sup>2</sup></span> / 3 <span>ЭТАЖ</span>
+                                </h4>
+                                <div class="catalog-plots__wrap">
+                                    <div class="catalog-plots__lead">Район:</div>
+                                    <div class="catalog-plots__text">Остоженка</div>
+                                </div>
+                                <div class="catalog-plots__wrap">
+                                    <div class="catalog-plots__lead">Адрес:</div>
+                                    <div class="catalog-plots__text _version">м. Кропоткинская, Молочный пер. 7, Москва,
+                                        Россия</div>
+                                </div>
+                                <div class="catalog-plots__btn">Цена по запросу</div>
+                            </div>
+                        </div>
+                        <div class="catalog-plots__item">
+                            <div class="catalog-plots__image">
+                                <picture>
+                                    <source srcset="img/catalog-plots_2.webp" type="image/webp"><img
+                                        src="img/catalog-plots_2.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="catalog-plots__info">
+                                <h3 class="catalog-plots__title">КВАРТИРА</h3>
+                                <h4 class="catalog-plots__sub-title">20 <span>КОМНАТ</span> / 1000
+                                    <span>М<sup>2</sup></span> / 3 <span>ЭТАЖ</span>
+                                </h4>
+                                <div class="catalog-plots__wrap">
+                                    <div class="catalog-plots__lead">Район:</div>
+                                    <div class="catalog-plots__text">Остоженка</div>
+                                </div>
+                                <div class="catalog-plots__wrap">
+                                    <div class="catalog-plots__lead">Адрес:</div>
+                                    <div class="catalog-plots__text _version">м. Кропоткинская, Молочный пер. 7, Москва,
+                                        Россия</div>
+                                </div>
+                                <div class="catalog-plots__btn">Цена по запросу</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="btn-more" class="catalog-plots__more">ПОКАЗАТЬ ЕЩЕ</div>
+                </div>
+            </section>
+            <!-- Каталог участков -->
+            <!-- Расположение проектов -->
+            <section id="location" class="location">
+                <div class="location__container">
+                    <h2 class="location__title">
+                        <span>Расположение проектов</span>
+                        <svg width="32" height="34" viewBox="0 0 32 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_622_131)">
+                                <path
+                                    d="M28 14.1632C28 24.0799 16 32.5799 16 32.5799C16 32.5799 4 24.0799 4 14.1632C4 10.7817 5.26428 7.53869 7.51472 5.1476C9.76516 2.75651 12.8174 1.41321 16 1.41321C19.1826 1.41321 22.2348 2.75651 24.4853 5.1476C26.7357 7.53869 28 10.7817 28 14.1632Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M16 18.4132C18.2091 18.4132 20 16.5104 20 14.1632C20 11.816 18.2091 9.91321 16 9.91321C13.7909 9.91321 12 11.816 12 14.1632C12 16.5104 13.7909 18.4132 16 18.4132Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_622_131">
+                                    <rect width="32" height="34" fill="white" transform="translate(0 -0.00341797)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </h2>
+                </div>
+            </section>
+            <!-- Расположение проектов -->
+            <!-- Обратная связь -->
+            <section class="fields">
+                <div class="fields__container">
+                    <div class="fields__head">
+                        <h2 class="fields__title">Закажите звонок, если вам интересно предложение</h2>
+                        <p class="fields__descr">Оставьте заявку и наш менеджер позвонит вам</p>
+                    </div>
+                    <form action="#" class="fields__form">
+                        <div class="fields__items">
+                            <div class="fields__item">
+                                <input type="text" placeholder="Имя">
+                            </div>
+                            <div class="fields__item">
+                                <input type="text" placeholder="Телефон">
+                            </div>
+                            <button class="fields__send">Отправить контакты</button>
+                        </div>
+                        <label class="fields__agree">
+                            <input class="check-box" type="checkbox">
+                            <span class="check-style"></span>
+                            Согласен на обработку персональных данных
+                        </label>
+                    </form>
+                </div>
+            </section>
+            <!-- Обратная связь -->
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__view">
+                    <h2 class="footer__title">
+                        Всегда <br>на линии!
+                    </h2>
+                    <p class="footer__descr">
+                        Круглосуточно принимаем <br>заявки. <br>
+                        Звоните в рабочее время,<br> чтобы договориться о встрече<br> в офисе.
+                    </p>
+                    <button class="footer__call">
+                        <img src="img/icon-call.svg" alt="">
+                        <span>Обратный звонок</span>
+                    </button>
+                </div>
+                <div class="footer__body">
+                    <div class="footer__inner">
+                        <nav class="footer__nav">
+                            <div class="footer__items">
+                                <div class="footer__name">О проекте</div>
+                                <a href="#" class="footer__sub-item">Карта предложений</a>
+                                <a href="#" class="footer__sub-item">Услуги</a>
+                                <a href="#" class="footer__sub-item">Документы</a>
+                                <a href="#" class="footer__item">Участки</a>
+                                <a href="#" class="footer__item">Участки с домами</a>
+                                <a href="#" class="footer__item">Элитная городская <br>недвижимость</a>
+                            </div>
+                            <div class="footer__items">
+                                <div class="footer__name">Посетителям</div>
+                                <a href="#" class="footer__sub-item">Часто задаваемые <br> вопросы</a>
+                                <a href="#" class="footer__sub-item">Частным инвесторам</a>
+                                <a href="#" class="footer__sub-item">Способ покупки</a>
+                                <a href="#" class="footer__sub-item">Акции</a>
+                                <a href="#" class="footer__item">Контакты</a>
+                            </div>
+                        </nav>
+                        <div class="footer__info">
+                            <a href="#" class="footer__logo"><img src="img/footer-logo.svg" alt=""></a>
+                            <div class="footer__more">
+                                <div class="footer__h-text">пн-пт с 10:00 до 19:00</div>
+                                <a href="#" class="footer__phone">+7 (495) 120 60 09</a>
+                                <div class="footer__f-text">info@plots.ru / sen@plots.ru</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__bottom">
+                        <p class="footer__wrap">© 2024 Компания Plots</p>
+                        <p class="footer__wrap">Политика обработки персональных данных</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Страницы -->
+        <div class="btn-pages">СТРАНИЦЫ</div>
+        <div class="pages">
+            <div class="pages__body">
+                <div data-close class="pages__close"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.72455 0.283027C9.43205 -0.00947264 8.95955 -0.00947264 8.66705 0.283027L4.99955 3.94303L1.33205 0.275527C1.03955 -0.0169727 0.567051 -0.0169727 0.274551 0.275527C-0.0179492 0.568027 -0.0179492 1.04053 0.274551 1.33303L3.94205 5.00053L0.274551 8.66803C-0.0179492 8.96053 -0.0179492 9.43303 0.274551 9.72553C0.567051 10.018 1.03955 10.018 1.33205 9.72553L4.99955 6.05803L8.66705 9.72553C8.95955 10.018 9.43205 10.018 9.72455 9.72553C10.0171 9.43303 10.0171 8.96053 9.72455 8.66803L6.05705 5.00053L9.72455 1.33303C10.0096 1.04803 10.0096 0.568027 9.72455 0.283027Z"
+                            fill="#8998D3" />
+                    </svg>
+                </div>
+                <div>
+                    <div class="pages__title">Основые страницы</div>
+                    <ul class="pages__items">
+                        <li class="pages__item"><a href="about.html">О Компании</a></li>
+                        <li class="pages__item"><a href="catalog-plots.html">Участки</a></li>
+                        <li class="pages__item"><a href="catalog-plots_house.html">Участки с домами</a></li>
+                        <li class="pages__item"><a href="questions.html">Часто задаваемые вопросы</a></li>
+                        <li class="pages__item"><a href="simple-flat.html">Квартира на ...</a></li>
+                        <li class="pages__item"><a href="simple-house.html">Новый дом в ...</a></li>
+                        <li class="pages__item"><a href="simple-plot.html">Уникальный участок с выходом к ...</a></li>
+                        <li class="pages__item"><a href="stock.html">Акции</a></li>
+                        <li class="pages__item"><a href="terms_of_purchase.html">Условия покупки</a></li>
+                        <li class="pages__item"><a href="urban-estate.html">Элитная городская недвижимость</a></li>
+                        <li class="pages__item"><a href="contact.html">Контакты</a></li>
+                    </ul>
+                    <div class="pages__title">Модальные окна</div>
+                    <ul class="pages__items">
+                        <li id="btn-modal" class="pages__item">Заказать звонок</li>
+                    </ul>
+                </div>
+                <div>
+                </div>
+            </div>
+        </div>
+        <!-- Страницы -->
+        <div class="modal">
+            <div class="modal__body">
+                <h2 class="modal__title">Заказать звонок</h2>
+                <div class="modal__text">Оставьте запрос и наш менеджер позвонит вам</div>
+                <form action="#" method="post" class="modal__form">
+                    <div class="modal__item"><input type="text" placeholder="Имя"></div>
+                    <div class="modal__item"><input type="text" placeholder="Телефон"></div>
+                    <label class="modal__agree">
+                        <input class="check-box" type="checkbox" checked>
+                        <span class="check-style"></span>
+                        Согласен на обработку персональных данных
+                    </label>
+                    <button class="modal__send" type="submit">Отправить запрос</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="files/main.js?_v=20240613094856"></script>
+    <script src="js/app.min.js?_v=20240613094856"></script>
+</body>
+
+</html>

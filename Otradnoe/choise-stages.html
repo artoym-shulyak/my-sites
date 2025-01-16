@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240217023100"
+/>
+	<link rel="stylesheet" href="css/style.min.css?_v=20240217023100">
+	<title>Визуальный выбор этаж</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Шапка -->
+        <header id="up" class="header _version _etc">
+            <div class="header__container">
+                <div class="header__btns">
+                    <img src="img/logo-etc.svg" alt="">
+                </div>
+                <a href="#" class="header__logo">
+                    ВЫБРАТЬ КВАРТИРУ
+                </a>
+                <div class="header__component">
+                    <div class="header__info">
+                        <a href="#" class="header__phone">+7 (495) 085-05-00</a>
+                        <div id="call" class="header__sub-text">ЗАКАЗАТЬ ЗВОНОК</div>
+                    </div>
+                    <nav class="header__menu menu">
+                        <div id="burger" class="menu__burger">
+                            <span class="menu__text">МЕНЮ</span>
+                            <span class="menu__span"></span>
+                        </div>
+                        <div id="modal-menu" class="modal-menu">
+                            <div class="modal-menu__container">
+                                <a href="#" class="modal-menu__logo">
+                                    <picture>
+                                        <source srcset="img/logo-menu-lg.svg" media="(max-width:767.98px)" />
+                                        <img src="img/logo-menu.svg" alt="" />
+                                    </picture>
+                                </a>
+                                <div class="modal-menu__col">
+                                    <div class="modal-menu__list">
+                                        <a href="#">КЕДРОВЫЕ РЕЗИДЕНЦИИ</a>
+                                        <a href="#">ОЛЕАНДРОВЫЕ РЕЗИДЕНЦИИ</a>
+                                        <a href="#">ОЛИВКОВЫЕ РЕЗИДЕНЦИИ</a>
+                                        <a href="#">МОЖЖЕВЕЛОВЫЕ</a>
+                                        <a href="#">РЕЗИДЕНЦИИ КИПАРИСНЫЕ</a>
+                                        <a href="#">РЕЗИДЕНЦИИ</a>
+                                    </div>
+                                    <div class="modal-menu__sub-list">
+                                        <a href="#" class="modal-menu__name">ГЛАВНАЯ СТРАНИЦА</a>
+                                        <a href="#" class="modal-menu__name">О ПРОЕКТЕ</a>
+                                        <div class="modal-menu__docs">
+                                            <a href="#">Описание проекта</a>
+                                            <a href="#">Расположение</a>
+                                            <a href="#">Архитектура</a>
+                                            <a href="#">Генплан проекта</a>
+                                            <a href="#">Галерея</a>
+                                            <a href="#">3Д ТУР</a>
+                                            <a href="#">Документы</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-menu__col">
+                                    <a href="#" class="modal-menu__name">ИНФРАСТРУКТУРА</a>
+                                    <div class="modal-menu__docs">
+                                        <a href="#">Описание</a>
+                                        <a href="#">Описание инфраструктуры</a>
+                                        <a href="#">Карта инфраструктуры</a>
+                                    </div>
+                                    <a href="#" class="modal-menu__name">ВЫБРАТЬ КВАРТИРУ</a>
+                                    <div class="modal-menu__docs">
+                                        <a href="#">Визуальный выбор</a>
+                                        <a href="#">Выбор по параметрам</a>
+                                        <a href="#">Паркинг</a>
+                                        <a href="#">Отделка</a>
+                                    </div>
+                                    <a href="#" class="modal-menu__name">СПОСОБ ПОКУПКИ</a>
+                                    <div class="modal-menu__docs">
+                                        <a href="#">Ипотека</a>
+                                        <a href="#">Ипотечный калькулятор</a>
+                                    </div>
+                                </div>
+                                <div class="modal-menu__col">
+                                    <a href="#" class="modal-menu__name">НОВОСТИ</a>
+                                    <div class="modal-menu__docs">
+                                        <a href="#">Новости</a>
+                                        <a href="#">Акции</a>
+                                        <a href="#">Ход строительства</a>
+                                    </div>
+                                    <a href="#" class="modal-menu__name">КОНТАКТЫ</a>
+                                    <a href="#" class="modal-menu__btn">ВЫБРАТЬ ОБЪЕКТ</a>
+                                    <div class="modal-menu__contact">
+                                        <a href="#" class="modal-menu__phone">+7 (495) 233-00-00</a>
+                                        <div class="modal-menu__socials">
+                                            <a href="#" class="modal-menu__soc"><img src="img/icon-vk.svg" alt=""></a>
+                                            <a href="#" class="modal-menu__soc"><img src="img/icon-ok.svg" alt=""></a>
+                                        </div>
+                                        <div class="modal-menu__sub-text">
+                                            ЗАКАЗАТЬ ЗВОНОК
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- Шапка -->
+        <!-- Страницы -->
+        <div class="btn-pages">СТРАНИЦЫ</div>
+        <div class="pages">
+            <div class="pages__body">
+                <div data-close class="pages__close"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.72455 0.283027C9.43205 -0.00947264 8.95955 -0.00947264 8.66705 0.283027L4.99955 3.94303L1.33205 0.275527C1.03955 -0.0169727 0.567051 -0.0169727 0.274551 0.275527C-0.0179492 0.568027 -0.0179492 1.04053 0.274551 1.33303L3.94205 5.00053L0.274551 8.66803C-0.0179492 8.96053 -0.0179492 9.43303 0.274551 9.72553C0.567051 10.018 1.03955 10.018 1.33205 9.72553L4.99955 6.05803L8.66705 9.72553C8.95955 10.018 9.43205 10.018 9.72455 9.72553C10.0171 9.43303 10.0171 8.96053 9.72455 8.66803L6.05705 5.00053L9.72455 1.33303C10.0096 1.04803 10.0096 0.568027 9.72455 0.283027Z"
+                            fill="#8998D3" />
+                    </svg>
+                </div>
+                <div>
+                    <div class="pages__title">Основые страницы</div>
+                    <ul class="pages__items">
+                        <li class="pages__item"><a href="index.html">Главная</a></li>
+                        <li class="pages__item"><a href="about.html">О проекте</a></li>
+                        <li class="pages__item"><a href="infastructure.html">Инфаструктура усадьбы</a></li>
+                        <li class="pages__item"><a href="object.html">Выбрать объект</a></li>
+                        <li class="pages__item"><a href="purchase.html">Способ покупки</a></li>
+                        <li class="pages__item"><a href="residences.html">О кедровые резиденции</a></li>
+                        <li class="pages__item"><a href="news.html">Новости</a></li>
+                        <li class="pages__item"><a href="single.html">Новости (single)</a></li>
+                        <li class="pages__item"><a href="construction.html">Ход строительства</a></li>
+                        <li class="pages__item"><a href="contact.html">Контакты</a></li>
+                    </ul>
+                    <div class="pages__title">Выбор квартиры</div>
+                    <ul class="pages__items">
+                        <li class="pages__item"><a href="choise-stages.html">Вызуальный выбор: Этаж</a></li>
+                        <li class="pages__item"><a href="choise-apartmens.html">Вызуальнынй выбор</a></li>
+                        <li class="pages__item"><a href="choise-visual.html">Визуальный выбор: Квартиры</a></li>
+                        <li class="pages__item"><a href="choise-paramets-list.html">Выбор по параметрам: Списком</a>
+                        </li>
+                        <li class="pages__item"><a href="choise-paramets.html">Выбор по параметрам: Плиткой</a></li>
+                        <li class="pages__item"><a href="parking.html">Выбрать паркинг</a></li>
+                    </ul>
+                    <div class="pages__title">Модальные окна</div>
+                    <ul class="pages__items">
+                        <li id="btn-burger" class="pages__item">Меню</li>
+                        <li id="btn-call" class="pages__item">Заказать звонок</li>
+                    </ul>
+                </div>
+                <div>
+                </div>
+            </div>
+        </div>
+        <!-- Страницы -->
+        <main>
+            <!-- Информация о квартирах -->
+            <section class="flat">
+                <div class="flat__container">
+                    <div class="flat__head">
+                        <h1 class="flat__title">Выбрать апартаменты</h1>
+                        <div class="flat__items">
+                            <a href="#" class="flat__item _active">Визуальный выбор</a>
+                            <a href="#" class="flat__item">выбор по параметрам</a>
+                        </div>
+                    </div>
+                    <div class="flat__stages">
+                        <a href="#" class="flat__backward">
+                            <div class="flat__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="19" viewBox="0 0 11 19"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_5_155869)">
+                                        <path
+                                            d="M9.06 18.1201C8.8 18.1201 8.55 18.0201 8.35 17.8301L0.29 9.77006C0.1 9.58006 0 9.33006 0 9.06006C0 8.79006 0.11 8.54006 0.29 8.35006L8.35 0.290059C8.74 -0.0999414 9.37 -0.0999414 9.76 0.290059C10.15 0.680059 10.15 1.31006 9.76 1.70006L2.41 9.06006L9.76 16.4101C10.15 16.8001 10.15 17.4301 9.76 17.8201C9.56 18.0201 9.31 18.1101 9.05 18.1101L9.06 18.1201Z"
+                                            fill="#263059" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_5_155869">
+                                            <rect width="10.06" height="18.12" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="flat__text">НАЗАД К ГЕНПЛАНУ</div>
+                        </a>
+                        <div class="flat__elements">
+                            <div class="flat__elem">
+                                <div class="flat__num">1</div>
+                                <div class="flat__sub-text">КОРПУС </div>
+                            </div>
+                            <div class="flat__elem">
+                                <div class="flat__prev">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="17" viewBox="0 0 23 17"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_5_32991)">
+                                            <path d="M2.16992 8.17999H22.5699" stroke="#C09A77" stroke-width="2"
+                                                stroke-miterlimit="10" />
+                                            <path
+                                                d="M8.8 16.36L10.16 14.89L2.94 8.18L10.16 1.46L8.8 0L0 8.18L8.8 16.36Z"
+                                                fill="#C09A77" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_5_32991">
+                                                <rect width="22.57" height="16.36" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="flat__wrap">
+                                    <div class="flat__num">2</div>
+                                    <div class="flat__sub-text">ЭТАЖ</div>
+                                </div>
+                                <div class="flat__next">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="17" viewBox="0 0 23 17"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_5_32994)">
+                                            <path d="M20.4004 8.17999H0.000391006" stroke="#C09A77" stroke-width="2"
+                                                stroke-miterlimit="10" />
+                                            <path
+                                                d="M13.7703 16.36L12.4103 14.89L19.6303 8.18L12.4103 1.46L13.7703 0L22.5703 8.18L13.7703 16.36Z"
+                                                fill="#C09A77" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_5_32994">
+                                                <rect width="22.57" height="16.36" fill="white"
+                                                    transform="matrix(-1 0 0 1 22.5703 0)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="flat__elem">
+                                <div class="flat__name">
+                                    СЕКЦИЯ<br>
+                                    НА ГЕНПЛАНЕ
+                                </div>
+                                <div class="flat__img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="73" height="70" viewBox="0 0 73 70"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_5_3237)">
+                                            <path
+                                                d="M1.85 0L10.71 1.92L10.26 4L15.58 5.15L15.75 4.36L21.85 5.68L21.3 8.13L27.01 9.38L27.57 6.92L33.69 8.24L33.05 10.72L38.42 11.88L39.07 9.38L45.5 10.79L45.1 12.98L50.29 14.11L47.98 24.43L6.82 15.6L0 8.06L1.85 0Z"
+                                                fill="#C09A77" />
+                                            <path d="M72.0002 14.62H54.4902V68.74H72.0002V14.62Z" stroke="#C09A77"
+                                                stroke-width="1.37" stroke-miterlimit="10" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_5_3237">
+                                                <rect width="72.68" height="69.43" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="flat__elem">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" viewBox="0 0 66 66"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_5_3240)">
+                                        <path
+                                            d="M47.8602 7.76999L46.9402 7.30999L46.4402 1.23999L44.1002 5.87999L43.4502 5.54999L46.2502 0.00999451L47.0302 0.409995L47.5702 6.73999L50.0102 1.90999L50.6602 2.23999L47.8602 7.77999V7.76999Z"
+                                            fill="#C79871" />
+                                        <path
+                                            d="M18.1401 61.15C18.8901 61.8 19.5901 62.59 18.9101 63.79C18.3501 64.78 17.2101 64.79 16.3701 64.36C15.6601 64 15.1001 63.21 15.2001 62.28L15.8501 62.26C15.7901 62.89 16.1101 63.49 16.6701 63.78C17.3201 64.12 17.9601 63.98 18.2901 63.43C18.7501 62.66 18.1301 62.06 17.6701 61.65C17.0301 61.08 16.3301 60.32 16.9101 59.24C17.4501 58.25 18.5101 58.17 19.3201 58.58C20.0201 58.94 20.5301 59.66 20.4301 60.5H19.8101C19.8601 59.89 19.5001 59.4 19.0501 59.17C18.5501 58.91 17.9101 58.95 17.5401 59.59C17.1501 60.27 17.7401 60.8 18.1401 61.15Z"
+                                            fill="#C79871" />
+                                        <path d="M22 54.95L28.63 31.35L43.7 12L37.06 35.61L22 54.95Z" fill="#C79871" />
+                                        <path
+                                            d="M12.4701 58.86C0.270059 49.31 -3.49994 32.34 3.49006 18.5C10.4901 4.66 26.3901 -2.38 41.3101 1.78L41.1401 2.39C26.5101 -1.69 10.9101 5.21 4.06006 18.78C-2.79994 32.36 0.900058 49 12.8601 58.36L12.4701 58.86Z"
+                                            fill="#C09A77" />
+                                        <path
+                                            d="M32.7096 65.85C29.3696 65.85 25.9796 65.33 22.6396 64.26L22.8296 63.66C37.8796 68.51 53.9897 61.77 61.1297 47.63C68.2696 33.49 64.1396 16.53 51.3097 7.29L51.6796 6.78C64.7696 16.2 68.9796 33.51 61.6996 47.92C55.9996 59.2 44.7096 65.86 32.7096 65.86V65.85Z"
+                                            fill="#C09A77" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_5_3240">
+                                            <rect width="65.25" height="65.85" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="flat__info">
+                            <div class="flat__name">Статус объекта:</div>
+                            <ul class="flat__list">
+                                <li>
+                                    <div class="flat__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <path d="M0.5 17.5V0.5H17.5V17.5H0.5Z" fill="white" stroke="#C09973" />
+                                        </svg>
+                                    </div>
+                                    <div class="flat__text">В продаже</div>
+                                </li>
+                                <li>
+                                    <div class="flat__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <g clip-path="url(#clip0_5_3207)">
+                                                <path d="M18 0H0V18H18V0Z" fill="#FFD2C7" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_5_3207">
+                                                    <rect width="18" height="18" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="flat__text">Продано</div>
+                                </li>
+                                <li>
+                                    <div class="flat__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <g clip-path="url(#clip0_5_3205)">
+                                                <path d="M18 0H0V18H18V0Z" fill="#FFEE78" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_5_3205">
+                                                    <rect width="18" height="18" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="flat__text">Забронировано</div>
+                                </li>
+                                <li>
+                                    <div class="flat__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 18 18" fill="none">
+                                            <g clip-path="url(#clip0_5_3203)">
+                                                <path d="M18 0H0V18H18V0Z" fill="#E0F6B6" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_5_3203">
+                                                    <rect width="18" height="18" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="flat__text">С ремонтом</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flat__up">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="39" viewBox="0 0 44 39"
+                                fill="none">
+                                <g clip-path="url(#clip0_5_32951)">
+                                    <path d="M12.3005 30.54H8.69047V38.37H7.23047V29.27H12.3005V30.54Z"
+                                        fill="#C09A77" />
+                                    <path
+                                        d="M22.7102 33.83C22.7102 36.56 20.6202 38.56 18.0602 38.56C15.5002 38.56 13.4102 36.6 13.4102 33.83C13.4102 31.06 15.5002 29.07 18.0602 29.07C20.6202 29.07 22.7102 31.11 22.7102 33.83ZM18.0602 37.21C19.6302 37.21 21.2202 36.01 21.2202 33.83C21.2202 31.65 19.6302 30.41 18.0502 30.42C16.4802 30.43 14.9202 31.67 14.9202 33.83C14.9202 35.99 16.4802 37.21 18.0702 37.21H18.0602Z"
+                                        fill="#C09A77" />
+                                    <path
+                                        d="M26.1206 38.38H24.6406V29.23H27.4706C29.5806 29.23 30.6206 30.75 30.6206 32.25C30.6206 33.75 29.5806 35.21 27.4906 35.21H26.1206V38.38ZM29.1406 32.24C29.1406 31.47 28.5706 30.58 27.4806 30.58H26.1306V33.86H27.4806C28.5806 33.86 29.1406 33 29.1406 32.25V32.24Z"
+                                        fill="#C09A77" />
+                                    <path
+                                        d="M33.6509 32.71H34.8909C36.8909 32.71 37.9109 34.14 37.9109 35.54C37.9109 36.94 36.9009 38.36 34.8809 38.36H32.2109V29.26H33.6509V32.71ZM33.6509 33.96V37.11H34.8709C35.9209 37.1 36.4609 36.3 36.4609 35.55C36.4609 34.8 35.9309 33.98 34.8709 33.96H33.6509ZM39.3609 29.27H40.7909V38.37H39.3609V29.27Z"
+                                        fill="#C09A77" />
+                                    <path d="M0.389648 21.84L17.4996 0.839996L22.8296 8.84L26.4396 14.45"
+                                        stroke="#C09A77" stroke-miterlimit="10" />
+                                    <path d="M42.7793 20.67L29.5493 4.34L23.7393 9.55" stroke="#C09A77"
+                                        stroke-miterlimit="10" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_5_32951">
+                                        <rect width="43.17" height="38.56" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+
+                        <div class="swiper flat__swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <picture><source srcset="img/stage-view.webp" type="image/webp"><img src="img/stage-view.png" alt=""></picture>
+                                </div>
+                                <div class="swiper-slide">
+                                    <picture><source srcset="img/stage-view.webp" type="image/webp"><img src="img/stage-view.png" alt=""></picture>
+                                </div>
+                                <div class="swiper-slide">
+                                    <picture><source srcset="img/stage-view.webp" type="image/webp"><img src="img/stage-view.png" alt=""></picture>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flat__down">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="41" height="34" viewBox="0 0 41 34"
+                                fill="none">
+                                <g clip-path="url(#clip0_5_32960)">
+                                    <path
+                                        d="M10.1503 0.140015H11.8403V9.30001H10.3403V4.71001L10.5503 2.55001H10.4803L9.80031 4.49001L8.23031 7.91001H6.93031L5.36031 4.49001L4.68031 2.54001H4.61031L4.82031 4.71001V9.30001H3.32031V0.140015H5.01031L7.57031 6.11001L10.1503 0.140015Z"
+                                        fill="#C09A77" />
+                                    <path
+                                        d="M23.0207 4.76C23.0207 7.49 20.9307 9.49 18.3707 9.49C15.8107 9.49 13.7207 7.53 13.7207 4.76C13.7207 1.99 15.8107 0 18.3707 0C20.9307 0 23.0207 2.04 23.0207 4.76ZM18.3707 8.14C19.9407 8.14 21.5307 6.94 21.5307 4.76C21.5307 2.58 19.9407 1.34 18.3607 1.35C16.7907 1.36 15.2307 2.6 15.2307 4.76C15.2307 6.92 16.7907 8.14 18.3807 8.14H18.3707Z"
+                                        fill="#C09A77" />
+                                    <path
+                                        d="M26.4302 9.31H24.9502V0.160004H27.7802C29.8902 0.160004 30.9302 1.68 30.9302 3.18C30.9302 4.68 29.8902 6.14 27.8002 6.14H26.4302V9.31ZM29.4502 3.17C29.4502 2.4 28.8802 1.51 27.7902 1.51H26.4402V4.79H27.7902C28.8902 4.79 29.4502 3.93 29.4502 3.18V3.17Z"
+                                        fill="#C09A77" />
+                                    <path
+                                        d="M37.4108 1.51999H33.8008V4.05999H37.3608V5.39999H33.8008V7.98999H37.4108V9.29999H32.3008V0.179993H37.4108V1.51999Z"
+                                        fill="#C09A77" />
+                                    <path
+                                        d="M30 24.77C27.32 24.77 25.98 23.7 24.69 22.66C23.47 21.69 22.33 20.77 20 20.77C17.67 20.77 16.53 21.69 15.31 22.66C14.01 23.7 12.67 24.77 10 24.77C7.33 24.77 5.99 23.7 4.69 22.66C3.48 21.69 2.33 20.77 0 20.77V19.77C2.68 19.77 4.02 20.84 5.31 21.88C6.52 22.85 7.67 23.77 10 23.77C12.33 23.77 13.47 22.85 14.69 21.88C15.99 20.84 17.33 19.77 20 19.77C22.67 19.77 24.02 20.84 25.31 21.88C26.53 22.85 27.67 23.77 30 23.77C32.33 23.77 33.47 22.85 34.69 21.88C35.99 20.84 37.33 19.77 40 19.77V20.77C37.67 20.77 36.53 21.69 35.31 22.66C34.01 23.7 32.67 24.77 30 24.77Z"
+                                        fill="#C09A77" />
+                                    <path
+                                        d="M30.5 33.77C27.82 33.77 26.48 32.7 25.19 31.66C23.97 30.69 22.83 29.77 20.5 29.77C18.17 29.77 17.03 30.69 15.81 31.66C14.51 32.7 13.17 33.77 10.5 33.77C7.83 33.77 6.49 32.7 5.19 31.66C3.98 30.69 2.83 29.77 0.5 29.77V28.77C3.18 28.77 4.52 29.84 5.81 30.88C7.02 31.85 8.17 32.77 10.5 32.77C12.83 32.77 13.97 31.85 15.19 30.88C16.49 29.84 17.83 28.77 20.5 28.77C23.17 28.77 24.52 29.84 25.81 30.88C27.03 31.85 28.17 32.77 30.5 32.77C32.83 32.77 33.97 31.85 35.19 30.88C36.49 29.84 37.83 28.77 40.5 28.77V29.77C38.17 29.77 37.03 30.69 35.81 31.66C34.51 32.7 33.17 33.77 30.5 33.77Z"
+                                        fill="#C09A77" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_5_32960">
+                                        <rect width="40.5" height="33.77" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Информация о квартирах -->
+        </main>
+        <footer class="footer _version">
+    <div class="footer__container">
+        <div class="footer__wrapper">
+            <div class="footer__links">
+                <a href="#">
+                    КЕДРОВЫЕ РЕЗИДЕНЦИИ
+                </a>
+                <a href="#">ОЛЕАНДРОВЫЕ РЕЗИДЕНЦИИ</a>
+                <a href="#">ОЛИВКОВЫЕ РЕЗИДЕНЦИИ </a>
+                <a href="#">МОЖЖЕВЕЛОВЫЕ РЕЗИДЕНЦИИ</a>
+                <a href="#">КИПАРИСНЫЕ РЕЗИДЕНЦИИ</a>
+                <a href="#"></a>
+            </div>
+            <div class="footer__col">
+                <a href="#" class="footer__name">ГЛАВНАЯ СТРАНИЦА</a>
+                <a href="#" class="footer__name">О ПРОЕКТЕ</a>
+                <div class="footer__items">
+                    <a href="#">Описание проекта</a>
+                    <a href="#">Расположение</a>
+                    <a href="#">Архитектура</a>
+                    <a href="#">Генплан проекта</a>
+                    <a href="#">Галерея</a>
+                    <a href="#">3Д ТУР</a>
+                    <a href="#">Документы</a>
+                </div>
+            </div>
+            <div class="footer__body">
+                <a href="#" class="footer__logo">
+                    <img src="img/logo-footer.svg" alt="">
+                </a>
+                <a href="#" class="footer__phone">+7 (495) 233-00-00</a>
+                <div class="footer__socials">
+                    <a href="#" class=""><img src="img/icon-vk.svg" alt=""></a>
+                    <a href="#" class=""><img src="img/icon-ok.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <a href="#" class="footer__name">ИНФРАСТРУКТУРА</a>
+                <div class="footer__items">
+                    <a href="#" class="">Описание инфраструктуры</a>
+                    <a href="#" class=""> Карта инфраструктуры</a>
+                </div>
+                <a href="#" class="footer__name">ВЫБРАТЬ КВАРТИРУ</a>
+                <div class="footer__items">
+                    <a href="#">Визуальный выбор</a>
+                    <a href="#">Выбор по параметрам</a>
+                    <a href="#">Паркинг</a>
+                    <a href="#">Отделка</a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <a href="#" class="footer__name">СПОСОБ ПОКУПКИ</a>
+                <div class="footer__items">
+                    <a href="#">Ипотека</a>
+                    <a href="#"> Ипотечный калькулятор</a>
+                </div>
+                <a href="#" class="footer__name">НОВОСТИ</a>
+                <div class="footer__items">
+                    <a href="#">Новости</a>
+                    <a href="#">Акции</a>
+                    <a href="#">Ход строительства</a>
+                </div>
+                <a href="#" class="footer__name">КОНТАКТЫ</a>
+            </div>
+        </div>
+        <div class="footer__info">
+            <div class="footer__text">© 2024. Усадьба Отрадное</div>
+            <a href="#up" class="footer__up element">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="11" viewBox="0 0 19 11" fill="none">
+                    <g clip-path="url(#clip0_3_802)">
+                        <path d="M18.1201 9.06C18.1201 8.8 18.0201 8.55 17.8301 8.35L9.77006 0.29C9.58006 0.1 9.33006 4.07937e-07 9.06006 3.96134e-07C8.79006 3.84332e-07 8.54006 0.11 8.35006 0.29L0.290058 8.35C-0.0999418 8.74 -0.0999418 9.37 0.290058 9.76C0.680058 10.15 1.31006 10.15 1.70006 9.76L9.06006 2.41L16.4101 9.76C16.8001 10.15 17.4301 10.15 17.8201 9.76C18.0201 9.56 18.1101 9.31 18.1101 9.05L18.1201 9.06Z" fill="#C09973" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_3_802">
+                            <rect width="10.06" height="18.12" fill="white" transform="matrix(-4.37114e-08 1 1 4.37114e-08 0 0)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
+        </div>
+    </div>
+</footer>
+        <div id="modal-call" class="modal-call">
+    <div class="modal-call__close" data-close>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.665 16L0.430765 29.0234C-0.143567 29.5886 -0.143567 30.5011 0.430765 31.0662C1.0051 31.6314 1.93233 31.6314 2.50666 31.0662L15.7409 18.0428L29.4933 31.5761C30.0677 32.1413 30.9949 32.1413 31.5692 31.5761C32.1436 31.0109 32.1436 30.0985 31.5692 29.5333L17.8168 16L31.5693 2.46671C32.1436 1.90153 32.1436 0.989067 31.5693 0.423886C30.9949 -0.141295 30.0677 -0.141295 29.4934 0.423886L15.7409 13.9572L2.50665 0.933751C1.93232 0.36857 1.00508 0.36857 0.430749 0.933751C-0.143583 1.49893 -0.143583 2.41139 0.430749 2.97657L13.665 16Z" fill="#C09973" />
+        </svg>
+    </div>
+    <div class="modal-call__container">
+        <h2 class="modal-call__title">Свяжитесь с нами</h2>
+        <div class="modal-call__descr">Наш менеджер поможет вам подобрать варианты</div>
+        <form class="modal-call__form" action="#">
+            <div class="modal-call__items">
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="+7 ___   ___ - __ - __">
+                <button type="submit">Перезвоните мне</button>
+            </div>
+            <label>
+                <input class="check-box" type="checkbox">
+                <span class="check-style"></span>
+                <div>Соглашение на обработку <br> персональных данных</div>
+            </label>
+    </div>
+    </form>
+</div>
+</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240217023100"></script>
+    <script src="files/main.js?_v=20240217023100"></script>
+</body>
+
+</html>

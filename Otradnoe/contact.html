@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240217023100"
+/>
+	<link rel="stylesheet" href="css/style.min.css?_v=20240217023100">
+	<title>Контакты</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header id="up" class="header _version">
+    <div class="header__container">
+        <div class="header__btns">
+            <button class="header__btn">ВЫБРАТЬ ОБЪЕКТ</button>
+        </div>
+        <a href="index.html" class="header__logo">
+            <picture>
+                <source srcset="img/logo-header-lg.svg" media="(max-width:1024.98px)" />
+                <img src="img/logo-header.svg" alt="" />
+            </picture>
+        </a>
+        <div class="header__component">
+            <div class="header__info">
+                <a href="#" class="header__phone">+7 (495) 085-05-00</a>
+                <div id="call" class="header__sub-text">ЗАКАЗАТЬ ЗВОНОК</div>
+            </div>
+            <nav class="header__menu menu">
+                <div id="burger" class="menu__burger">
+                    <span class="menu__text">МЕНЮ</span>
+                    <span class="menu__span"></span>
+                </div>
+                <div id="modal-menu" class="modal-menu">
+                    <div class="modal-menu__container">
+                        <a href="#" class="modal-menu__logo">
+                            <picture>
+                                <source srcset="img/logo-menu-lg.svg" media="(max-width:767.98px)" />
+                                <img src="img/logo-menu.svg" alt="" />
+                            </picture>
+                        </a>
+                        <div class="modal-menu__col">
+                            <div class="modal-menu__list">
+                                <a href="#">КЕДРОВЫЕ РЕЗИДЕНЦИИ</a>
+                                <a href="#">ОЛЕАНДРОВЫЕ РЕЗИДЕНЦИИ</a>
+                                <a href="#">ОЛИВКОВЫЕ РЕЗИДЕНЦИИ</a>
+                                <a href="#">МОЖЖЕВЕЛОВЫЕ</a>
+                                <a href="#">РЕЗИДЕНЦИИ КИПАРИСНЫЕ</a>
+                                <a href="#">РЕЗИДЕНЦИИ</a>
+                            </div>
+                            <div class="modal-menu__sub-list">
+                                <a href="#" class="modal-menu__name">ГЛАВНАЯ СТРАНИЦА</a>
+                                <a href="#" class="modal-menu__name">О ПРОЕКТЕ</a>
+                                <div class="modal-menu__docs">
+                                    <a href="#">Описание проекта</a>
+                                    <a href="#">Расположение</a>
+                                    <a href="#">Архитектура</a>
+                                    <a href="#">Генплан проекта</a>
+                                    <a href="#">Галерея</a>
+                                    <a href="#">3Д ТУР</a>
+                                    <a href="#">Документы</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-menu__col">
+                            <a href="#" class="modal-menu__name">ИНФРАСТРУКТУРА</a>
+                            <div class="modal-menu__docs">
+                                <a href="#">Описание</a>
+                                <a href="#">Описание инфраструктуры</a>
+                                <a href="#">Карта инфраструктуры</a>
+                            </div>
+                            <a href="#" class="modal-menu__name">ВЫБРАТЬ КВАРТИРУ</a>
+                            <div class="modal-menu__docs">
+                                <a href="#">Визуальный выбор</a>
+                                <a href="#">Выбор по параметрам</a>
+                                <a href="#">Паркинг</a>
+                                <a href="#">Отделка</a>
+                            </div>
+                            <a href="#" class="modal-menu__name">СПОСОБ ПОКУПКИ</a>
+                            <div class="modal-menu__docs">
+                                <a href="#">Ипотека</a>
+                                <a href="#">Ипотечный калькулятор</a>
+                            </div>
+                        </div>
+                        <div class="modal-menu__col">
+                            <a href="#" class="modal-menu__name">НОВОСТИ</a>
+                            <div class="modal-menu__docs">
+                                <a href="#">Новости</a>
+                                <a href="#">Акции</a>
+                                <a href="#">Ход строительства</a>
+                            </div>
+                            <a href="#" class="modal-menu__name">КОНТАКТЫ</a>
+                            <a href="#" class="modal-menu__btn">ВЫБРАТЬ ОБЪЕКТ</a>
+                            <div class="modal-menu__contact">
+                                <a href="#" class="modal-menu__phone">+7 (495) 233-00-00</a>
+                                <div class="modal-menu__socials">
+                                    <a href="#" class="modal-menu__soc"><img src="img/icon-vk.svg" alt=""></a>
+                                    <a href="#" class="modal-menu__soc"><img src="img/icon-ok.svg" alt=""></a>
+                                </div>
+                                <div class="modal-menu__sub-text">
+                                    ЗАКАЗАТЬ ЗВОНОК
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!-- Страницы -->
+<div class="btn-pages">СТРАНИЦЫ</div>
+<div class="pages">
+    <div class="pages__body">
+        <div data-close class="pages__close"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.72455 0.283027C9.43205 -0.00947264 8.95955 -0.00947264 8.66705 0.283027L4.99955 3.94303L1.33205 0.275527C1.03955 -0.0169727 0.567051 -0.0169727 0.274551 0.275527C-0.0179492 0.568027 -0.0179492 1.04053 0.274551 1.33303L3.94205 5.00053L0.274551 8.66803C-0.0179492 8.96053 -0.0179492 9.43303 0.274551 9.72553C0.567051 10.018 1.03955 10.018 1.33205 9.72553L4.99955 6.05803L8.66705 9.72553C8.95955 10.018 9.43205 10.018 9.72455 9.72553C10.0171 9.43303 10.0171 8.96053 9.72455 8.66803L6.05705 5.00053L9.72455 1.33303C10.0096 1.04803 10.0096 0.568027 9.72455 0.283027Z"
+                    fill="#8998D3" />
+            </svg>
+        </div>
+        <div>
+            <div class="pages__title">Основые страницы</div>
+            <ul class="pages__items">
+                <li class="pages__item"><a href="index.html">Главная</a></li>
+                <li class="pages__item"><a href="about.html">О проекте</a></li>
+                <li class="pages__item"><a href="infastructure.html">Инфаструктура усадьбы</a></li>
+                <li class="pages__item"><a href="object.html">Выбрать объект</a></li>
+                <li class="pages__item"><a href="purchase.html">Способ покупки</a></li>
+                <li class="pages__item"><a href="residences.html">О кедровые резиденции</a></li>
+                <li class="pages__item"><a href="news.html">Новости</a></li>
+                <li class="pages__item"><a href="single.html">Новости (single)</a></li>
+                <li class="pages__item"><a href="construction.html">Ход строительства</a></li>
+                <li class="pages__item"><a href="contact.html">Контакты</a></li>
+            </ul>
+            <div class="pages__title">Выбор квартиры</div>
+            <ul class="pages__items">
+                <li class="pages__item"><a href="choise-stages.html">Вызуальный выбор: Этаж</a></li>
+                <li class="pages__item"><a href="choise-apartmens.html">Вызуальнынй выбор</a></li>
+                <li class="pages__item"><a href="choise-visual.html">Визуальный выбор: Квартиры</a></li>
+                <li class="pages__item"><a href="choise-paramets-list.html">Выбор по параметрам: Списком</a></li>
+                <li class="pages__item"><a href="choise-paramets.html">Выбор по параметрам: Плиткой</a></li>
+                <li class="pages__item"><a href="parking.html">Выбрать паркинг</a></li>
+            </ul>
+            <div class="pages__title">Модальные окна</div>
+            <ul class="pages__items">
+                <li id="btn-burger" class="pages__item">Меню</li>
+                <li id="btn-call" class="pages__item">Заказать звонок</li>
+            </ul>
+        </div>
+        <div>
+        </div>
+    </div>
+</div>
+<!-- Страницы -->
+        <main>
+            <!-- Контакты -->
+            <section class="contact">
+                <div class="contact__container">
+                    <h2 class="contact__title">
+                        Контакты
+                    </h2>
+                    <div class="contact__items">
+                        <div class="contact__item">
+                            <div class="contact__name">Офис продаж в Ялте</div>
+                            <div class="contact__elems">
+                                <div class="contact__elem">
+                                    <div class="contact__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            viewBox="0 0 30 30" fill="none">
+                                            <path
+                                                d="M22.8108 16.7621C21.8283 18.7528 20.4984 20.7377 19.1358 22.5188C17.7775 24.2944 16.4145 25.8315 15.3894 26.9259C15.2532 27.0713 15.1231 27.2087 15 27.3376C14.8769 27.2087 14.7468 27.0713 14.6106 26.9259C13.5855 25.8315 12.2225 24.2944 10.8642 22.5188C9.50164 20.7377 8.17171 18.7528 7.18918 16.7621C6.19651 14.7508 5.625 12.8661 5.625 11.25C5.625 6.07233 9.82233 1.875 15 1.875C20.1777 1.875 24.375 6.07233 24.375 11.25C24.375 12.8661 23.8035 14.7508 22.8108 16.7621ZM15 30C15 30 26.25 19.3382 26.25 11.25C26.25 5.0368 21.2132 0 15 0C8.7868 0 3.75 5.0368 3.75 11.25C3.75 19.3382 15 30 15 30Z"
+                                                fill="#C09973" />
+                                            <path
+                                                d="M15 15C12.9289 15 11.25 13.3211 11.25 11.25C11.25 9.17893 12.9289 7.5 15 7.5C17.0711 7.5 18.75 9.17893 18.75 11.25C18.75 13.3211 17.0711 15 15 15ZM15 16.875C18.1066 16.875 20.625 14.3566 20.625 11.25C20.625 8.1434 18.1066 5.625 15 5.625C11.8934 5.625 9.375 8.1434 9.375 11.25C9.375 14.3566 11.8934 16.875 15 16.875Z"
+                                                fill="#C09973" />
+                                        </svg>
+                                    </div>
+                                    <div class="contact__text">
+                                        Ялта, ПГТ Отрадное, ул. Дражинского д.24
+                                    </div>
+                                </div>
+                                <a href="#" class="contact__elem">
+                                    <div class="contact__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            viewBox="0 0 30 30" fill="none">
+                                            <path
+                                                d="M0 7.5C0 5.42893 1.67893 3.75 3.75 3.75H26.25C28.3211 3.75 30 5.42893 30 7.5V22.5C30 24.5711 28.3211 26.25 26.25 26.25H3.75C1.67893 26.25 0 24.5711 0 22.5V7.5ZM3.75 5.625C2.71447 5.625 1.875 6.46447 1.875 7.5V7.9067L15 15.7817L28.125 7.9067V7.5C28.125 6.46447 27.2855 5.625 26.25 5.625H3.75ZM28.125 10.0933L19.2974 15.3899L28.125 20.8223V10.0933ZM28.0617 22.9849L17.4859 16.4767L15 17.9683L12.5141 16.4767L1.93831 22.9849C2.15202 23.7854 2.88216 24.375 3.75 24.375H26.25C27.1178 24.375 27.848 23.7854 28.0617 22.9849ZM1.875 20.8223L10.7026 15.3899L1.875 10.0933V20.8223Z"
+                                                fill="#C09973" />
+                                        </svg>
+                                    </div>
+                                    <div class="contact__text">
+                                        info@npalace.ru
+                                    </div>
+                                </a>
+                                <a href="#" class="contact__elem">
+                                    <div class="contact__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 32 32" fill="none">
+                                            <path
+                                                d="M7.30775 2.65698C6.80686 2.01299 5.8549 1.95372 5.27801 2.53061L3.21016 4.59846C2.24321 5.56541 1.88774 6.93531 2.3102 8.13694C4.00675 12.9625 6.7843 17.4934 10.6454 21.3546C14.5066 25.2157 19.0375 27.9933 23.8631 29.6898C25.0647 30.1123 26.4346 29.7568 27.4015 28.7898L29.4694 26.722C30.0463 26.1451 29.987 25.1931 29.343 24.6923L24.7306 21.1048C24.4017 20.849 23.9733 20.7585 23.5689 20.8596L19.1908 21.9542C18.0016 22.2515 16.7437 21.903 15.8769 21.0363L10.9637 16.1231C10.097 15.2563 9.74855 13.9984 10.0458 12.8092L11.1404 8.43106C11.2415 8.02672 11.151 7.59835 10.8952 7.26936L7.30775 2.65698ZM3.76955 1.02215C5.25377 -0.462077 7.70299 -0.309594 8.99166 1.34727L12.5791 5.95965C13.2374 6.80608 13.47 7.90817 13.21 8.94845L12.1154 13.3266C11.9999 13.7888 12.1353 14.2778 12.4722 14.6146L17.3854 19.5278C17.7223 19.8647 18.2112 20.0001 18.6734 19.8846L23.0515 18.79C24.0918 18.53 25.1939 18.7626 26.0403 19.4209L30.6527 23.0083C32.3096 24.297 32.4621 26.7462 30.9778 28.2305L28.91 30.2983C27.4306 31.7777 25.2178 32.4274 23.1555 31.7023C18.0351 29.9021 13.2288 26.9548 9.13698 22.863C5.04519 18.7712 2.0979 13.9649 0.297676 8.8445C-0.427365 6.78225 0.22226 4.56944 1.7017 3.09L3.76955 1.02215Z"
+                                                fill="#C09973" />
+                                        </svg>
+                                    </div>
+                                    <div class="contact__text">
+                                        +7 978 985 02 78
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="#" class="contact__more">
+                                Построить маршрут
+                            </a>
+                        </div>
+                        <div class="contact__item">
+                            <div class="contact__name">Офис продаж в Москве</div>
+                            <div class="contact__elems">
+                                <div class="contact__elem">
+                                    <div class="contact__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            viewBox="0 0 30 30" fill="none">
+                                            <path
+                                                d="M22.8108 16.7621C21.8283 18.7528 20.4984 20.7377 19.1358 22.5188C17.7775 24.2944 16.4145 25.8315 15.3894 26.9259C15.2532 27.0713 15.1231 27.2087 15 27.3376C14.8769 27.2087 14.7468 27.0713 14.6106 26.9259C13.5855 25.8315 12.2225 24.2944 10.8642 22.5188C9.50164 20.7377 8.17171 18.7528 7.18918 16.7621C6.19651 14.7508 5.625 12.8661 5.625 11.25C5.625 6.07233 9.82233 1.875 15 1.875C20.1777 1.875 24.375 6.07233 24.375 11.25C24.375 12.8661 23.8035 14.7508 22.8108 16.7621ZM15 30C15 30 26.25 19.3382 26.25 11.25C26.25 5.0368 21.2132 0 15 0C8.7868 0 3.75 5.0368 3.75 11.25C3.75 19.3382 15 30 15 30Z"
+                                                fill="#C09973" />
+                                            <path
+                                                d="M15 15C12.9289 15 11.25 13.3211 11.25 11.25C11.25 9.17893 12.9289 7.5 15 7.5C17.0711 7.5 18.75 9.17893 18.75 11.25C18.75 13.3211 17.0711 15 15 15ZM15 16.875C18.1066 16.875 20.625 14.3566 20.625 11.25C20.625 8.1434 18.1066 5.625 15 5.625C11.8934 5.625 9.375 8.1434 9.375 11.25C9.375 14.3566 11.8934 16.875 15 16.875Z"
+                                                fill="#C09973" />
+                                        </svg>
+                                    </div>
+                                    <div class="contact__text">
+                                        Москва, ул. Мажайский Вал 8 стр 6
+                                    </div>
+                                </div>
+                                <a href="#" class="contact__elem">
+                                    <div class="contact__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                            viewBox="0 0 30 30" fill="none">
+                                            <path
+                                                d="M0 7.5C0 5.42893 1.67893 3.75 3.75 3.75H26.25C28.3211 3.75 30 5.42893 30 7.5V22.5C30 24.5711 28.3211 26.25 26.25 26.25H3.75C1.67893 26.25 0 24.5711 0 22.5V7.5ZM3.75 5.625C2.71447 5.625 1.875 6.46447 1.875 7.5V7.9067L15 15.7817L28.125 7.9067V7.5C28.125 6.46447 27.2855 5.625 26.25 5.625H3.75ZM28.125 10.0933L19.2974 15.3899L28.125 20.8223V10.0933ZM28.0617 22.9849L17.4859 16.4767L15 17.9683L12.5141 16.4767L1.93831 22.9849C2.15202 23.7854 2.88216 24.375 3.75 24.375H26.25C27.1178 24.375 27.848 23.7854 28.0617 22.9849ZM1.875 20.8223L10.7026 15.3899L1.875 10.0933V20.8223Z"
+                                                fill="#C09973" />
+                                        </svg>
+                                    </div>
+                                    <div class="contact__text">
+                                        info@npalace.ru
+                                    </div>
+                                </a>
+                                <a href="#" class="contact__elem">
+                                    <div class="contact__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 32 32" fill="none">
+                                            <path
+                                                d="M7.30775 2.65698C6.80686 2.01299 5.8549 1.95372 5.27801 2.53061L3.21016 4.59846C2.24321 5.56541 1.88774 6.93531 2.3102 8.13694C4.00675 12.9625 6.7843 17.4934 10.6454 21.3546C14.5066 25.2157 19.0375 27.9933 23.8631 29.6898C25.0647 30.1123 26.4346 29.7568 27.4015 28.7898L29.4694 26.722C30.0463 26.1451 29.987 25.1931 29.343 24.6923L24.7306 21.1048C24.4017 20.849 23.9733 20.7585 23.5689 20.8596L19.1908 21.9542C18.0016 22.2515 16.7437 21.903 15.8769 21.0363L10.9637 16.1231C10.097 15.2563 9.74855 13.9984 10.0458 12.8092L11.1404 8.43106C11.2415 8.02672 11.151 7.59835 10.8952 7.26936L7.30775 2.65698ZM3.76955 1.02215C5.25377 -0.462077 7.70299 -0.309594 8.99166 1.34727L12.5791 5.95965C13.2374 6.80608 13.47 7.90817 13.21 8.94845L12.1154 13.3266C11.9999 13.7888 12.1353 14.2778 12.4722 14.6146L17.3854 19.5278C17.7223 19.8647 18.2112 20.0001 18.6734 19.8846L23.0515 18.79C24.0918 18.53 25.1939 18.7626 26.0403 19.4209L30.6527 23.0083C32.3096 24.297 32.4621 26.7462 30.9778 28.2305L28.91 30.2983C27.4306 31.7777 25.2178 32.4274 23.1555 31.7023C18.0351 29.9021 13.2288 26.9548 9.13698 22.863C5.04519 18.7712 2.0979 13.9649 0.297676 8.8445C-0.427365 6.78225 0.22226 4.56944 1.7017 3.09L3.76955 1.02215Z"
+                                                fill="#C09973" />
+                                        </svg>
+                                    </div>
+                                    <div class="contact__text">
+                                        +7 978 985 02 78
+                                    </div>
+                                </a>
+                            </div>
+                            <a href="#" class="contact__more">
+                                Построить маршрут
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Контакты -->
+            <!-- Местоположения -->
+            <section class="location">
+                <picture><source srcset="img/maps-img.webp" type="image/webp"><img src="img/maps-img.png" alt=""></picture>
+            </section>
+            <!-- Местоположения -->
+            <!-- Обратная связь  -->
+            <section class="connect _version">
+                <div class="connect__container">
+                    <div class="connect__body">
+                        <h2 class="connect__title">Остались вопросы?</h2>
+                        <p class="connect__descr">Оставьте свой номер, и наш менеджер поможет вам подобрать варианты</p>
+                        <form action="#" class="connect__form">
+                            <input type="text" placeholder="Имя">
+                            <input type="text" placeholder="Телефон">
+                            <button type="submit">Перезвоните мне</button>
+                        </form>
+                        <div class="connect__text">
+                            Отправляя эту заявку, вы даете согласие на обработку <br> персональных данных
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Обратная связь  -->
+        </main>
+        <footer class="footer">
+    <div class="footer__container">
+        <div class="footer__wrapper">
+            <div class="footer__links">
+                <a href="#">
+                    КЕДРОВЫЕ РЕЗИДЕНЦИИ
+                </a>
+                <a href="#">ОЛЕАНДРОВЫЕ РЕЗИДЕНЦИИ</a>
+                <a href="#">ОЛИВКОВЫЕ РЕЗИДЕНЦИИ </a>
+                <a href="#">МОЖЖЕВЕЛОВЫЕ РЕЗИДЕНЦИИ</a>
+                <a href="#">КИПАРИСНЫЕ РЕЗИДЕНЦИИ</a>
+                <a href="#"></a>
+            </div>
+            <div class="footer__col">
+                <a href="#" class="footer__name">ГЛАВНАЯ СТРАНИЦА</a>
+                <a href="#" class="footer__name">О ПРОЕКТЕ</a>
+                <div class="footer__items">
+                    <a href="#">Описание проекта</a>
+                    <a href="#">Расположение</a>
+                    <a href="#">Архитектура</a>
+                    <a href="#">Генплан проекта</a>
+                    <a href="#">Галерея</a>
+                    <a href="#">3Д ТУР</a>
+                    <a href="#">Документы</a>
+                </div>
+            </div>
+            <div class="footer__body">
+                <a href="#" class="footer__logo">
+                    <img src="img/logo-footer.svg" alt="">
+                </a>
+                <a href="#" class="footer__phone">+7 (495) 233-00-00</a>
+                <div class="footer__socials">
+                    <a href="#" class=""><img src="img/icon-vk.svg" alt=""></a>
+                    <a href="#" class=""><img src="img/icon-ok.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <a href="#" class="footer__name">ИНФРАСТРУКТУРА</a>
+                <div class="footer__items">
+                    <a href="#" class="">Описание инфраструктуры</a>
+                    <a href="#" class=""> Карта инфраструктуры</a>
+                </div>
+                <a href="#" class="footer__name">ВЫБРАТЬ КВАРТИРУ</a>
+                <div class="footer__items">
+                    <a href="#">Визуальный выбор</a>
+                    <a href="#">Выбор по параметрам</a>
+                    <a href="#">Паркинг</a>
+                    <a href="#">Отделка</a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <a href="#" class="footer__name">СПОСОБ ПОКУПКИ</a>
+                <div class="footer__items">
+                    <a href="#">Ипотека</a>
+                    <a href="#"> Ипотечный калькулятор</a>
+                </div>
+                <a href="#" class="footer__name">НОВОСТИ</a>
+                <div class="footer__items">
+                    <a href="#">Новости</a>
+                    <a href="#">Акции</a>
+                    <a href="#">Ход строительства</a>
+                </div>
+                <a href="#" class="footer__name">КОНТАКТЫ</a>
+            </div>
+        </div>
+        <div class="footer__info">
+            <div class="footer__text">© 2024. Усадьба Отрадное</div>
+            <a href="#up" class="footer__up element">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="11" viewBox="0 0 19 11" fill="none">
+                    <g clip-path="url(#clip0_3_802)">
+                        <path d="M18.1201 9.06C18.1201 8.8 18.0201 8.55 17.8301 8.35L9.77006 0.29C9.58006 0.1 9.33006 4.07937e-07 9.06006 3.96134e-07C8.79006 3.84332e-07 8.54006 0.11 8.35006 0.29L0.290058 8.35C-0.0999418 8.74 -0.0999418 9.37 0.290058 9.76C0.680058 10.15 1.31006 10.15 1.70006 9.76L9.06006 2.41L16.4101 9.76C16.8001 10.15 17.4301 10.15 17.8201 9.76C18.0201 9.56 18.1101 9.31 18.1101 9.05L18.1201 9.06Z" fill="#C09973" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_3_802">
+                            <rect width="10.06" height="18.12" fill="white" transform="matrix(-4.37114e-08 1 1 4.37114e-08 0 0)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+
+        <div id="modal-call" class="modal-call">
+    <div class="modal-call__close" data-close>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.665 16L0.430765 29.0234C-0.143567 29.5886 -0.143567 30.5011 0.430765 31.0662C1.0051 31.6314 1.93233 31.6314 2.50666 31.0662L15.7409 18.0428L29.4933 31.5761C30.0677 32.1413 30.9949 32.1413 31.5692 31.5761C32.1436 31.0109 32.1436 30.0985 31.5692 29.5333L17.8168 16L31.5693 2.46671C32.1436 1.90153 32.1436 0.989067 31.5693 0.423886C30.9949 -0.141295 30.0677 -0.141295 29.4934 0.423886L15.7409 13.9572L2.50665 0.933751C1.93232 0.36857 1.00508 0.36857 0.430749 0.933751C-0.143583 1.49893 -0.143583 2.41139 0.430749 2.97657L13.665 16Z" fill="#C09973" />
+        </svg>
+    </div>
+    <div class="modal-call__container">
+        <h2 class="modal-call__title">Свяжитесь с нами</h2>
+        <div class="modal-call__descr">Наш менеджер поможет вам подобрать варианты</div>
+        <form class="modal-call__form" action="#">
+            <div class="modal-call__items">
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="+7 ___   ___ - __ - __">
+                <button type="submit">Перезвоните мне</button>
+            </div>
+            <label>
+                <input class="check-box" type="checkbox">
+                <span class="check-style"></span>
+                <div>Соглашение на обработку <br> персональных данных</div>
+            </label>
+    </div>
+    </form>
+</div>
+</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240217023100"></script>
+    <script src="files/main.js?_v=20240217023100"></script>
+</body>
+
+</html>
