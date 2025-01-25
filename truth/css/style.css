@@ -133,6 +133,10 @@ body {
   font-size: var(--fz);
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2055,6 +2059,182 @@ main {
   border: 1px solid var(--white);
 }
 
+.modal-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  z-index: 1000;
+  color: var(--dark);
+}
+
+.modal-menu.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-menu__backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+}
+
+.modal-menu__content {
+  position: relative;
+  height: 100%;
+  background: #fff;
+  max-width: 300px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px 0 0 8px;
+  -webkit-animation: slideIn 0.3s ease;
+          animation: slideIn 0.3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: auto;
+  margin-left: auto;
+}
+
+.modal-menu__close {
+  position: fixed;
+  top: 15px;
+  line-height: 100%;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 40px;
+  padding-top: 5px;
+  cursor: pointer;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30px;
+  width: 30px;
+  border: 1px solid var(--dark);
+  -webkit-box-shadow: 0 0 5px var(--dark);
+          box-shadow: 0 0 5px var(--dark);
+  z-index: 2;
+  background-color: var(--white);
+}
+
+.modal-menu__nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+}
+
+.modal-menu__nav li {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.modal-menu__nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+@-webkit-keyframes slideIn {
+  from {
+    -webkit-transform: translateX(150px);
+            transform: translateX(150px);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    -webkit-transform: translateX(150px);
+            transform: translateX(150px);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.modal-menu__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-gap: 10px;
+  font-size: 18px;
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid var(--dark);
+}
+
+.modal-menu__socials {
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid var(--dark);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-gap: 10px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.modal-menu__social-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 6px;
+}
+
+.modal-menu__contact {
+  padding-top: 20px;
+  margin-top: auto;
+  border-top: 1px solid var(--dark);
+  font-size: 18px;
+}
+
 ._soon {
   color: var(--red);
   font-size: 32px;
@@ -2980,9 +3160,23 @@ main {
     transition: none !important;
     -webkit-animation: none !important;
             animation: none !important;
+    position: relative;
+    z-index: -1;
+  }
+
+  .about__info .about__name {
+    position: relative;
+    z-index: -1;
+  }
+
+  .about__info .about__descr {
+    z-index: -1;
+    position: relative;
   }
 
   .about .swiper-slide {
+    z-index: 1;
+    position: relative;
     margin: 0 4px;
   }
 
