@@ -1243,13 +1243,14 @@ main {
   opacity: 1;
 }
 @media (min-width: 992px) {
-  .our-initiatives__swiper {
+  .our-initiatives__swiper .swiper-wrapper {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    transform: translate3d(0px, 0px, 0px) !important;
   }
   .our-initiatives__swiper .swiper-slide {
-    width: auto;
+    width: 100% !important;
     height: 430px;
     padding: 0;
     opacity: 1;
@@ -2553,11 +2554,13 @@ main {
     content: "";
     background-color: var(--dark);
     height: 100%;
-    width: 120000px;
-    right: 30px;
+    width: 1000%;
+    right: 0;
     z-index: -1;
     top: 0;
     bottom: 0;
+    transform: translateX(0);
+    left: auto;
   }
   .ai-torah-codes__title {
     font-size: 102px;
@@ -2579,8 +2582,8 @@ main {
     margin: 0;
     position: absolute;
     left: 307px;
-    top: -137px;
-    width: 624px;
+    top: -150px;
+    width: 654px;
   }
 }
 @media (min-width: 1200px) {
@@ -2588,9 +2591,9 @@ main {
     padding: 50px 0;
   }
   .ai-torah-codes__image {
-    width: 804px;
-    top: -200px;
-    left: 307px;
+    width: 832px;
+    top: -220px;
+    left: 309px;
   }
 }
 @media (min-width: 1440px) {
@@ -2609,9 +2612,9 @@ main {
     margin-bottom: 30px;
   }
   .ai-torah-codes__image {
-    width: 1147px;
-    top: -311px;
-    left: 425px;
+    width: 1166px;
+    top: -322px;
+    left: 435px;
   }
 }
 .feature-film-truth {
@@ -2861,15 +2864,19 @@ main {
   background-color: var(--red);
   height: 100%;
   width: 1000%;
-  left: 50%;
-  transform: translateX(-50%);
   z-index: -1;
   top: 0;
+  transform: translateX(-50%);
+  left: 50%;
   bottom: 0;
 }
 @media (min-width: 992px) {
   .ar-effects-tradition__container {
     padding: 24px 30px 24px 400px;
+  }
+  .ar-effects-tradition__container::before {
+    left: 0;
+    transform: translateX(0);
   }
 }
 @media (min-width: 1200px) {
@@ -3525,6 +3532,13 @@ main {
   height: 100%;
   width: 1000%;
   z-index: -1;
+}
+@media (min-width: 992px) {
+  .involved__container::before {
+    left: auto;
+    right: 0;
+    transform: translateX(0);
+  }
 }
 @media (min-width: 1440px) {
   .involved__container {
