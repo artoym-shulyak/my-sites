@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-	<head>
+  <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta
@@ -9,17 +9,17 @@
   />
   <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250127133000"
   />
 
-  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20250127133000" />
   <title>Projects</title>
 </head>
 
-	<body>
-		<div class="wrapper">
-			<!-- Шапка -->
-			<header class="header _secondary">
+  <body>
+    <div class="wrapper">
+      <!-- Шапка -->
+      <header class="header _secondary">
   <div class="header__container">
     <a href="index.html" class="header__logo"
       ><img src="img/logo.png" alt="logo"
@@ -44,9 +44,54 @@
   </div>
 </header>
 
-			<!-- Шапка -->
-			<main>
-				<section class="discoveries">
+<!-- Страницы -->
+<div class="btn-pages">СТРАНИЦЫ</div>
+<div class="pages">
+  <div class="pages__body">
+    <div data-close class="pages__close">
+      <svg
+        width="10"
+        height="10"
+        viewBox="0 0 10 10"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M9.72455 0.283027C9.43205 -0.00947264 8.95955 -0.00947264 8.66705 0.283027L4.99955 3.94303L1.33205 0.275527C1.03955 -0.0169727 0.567051 -0.0169727 0.274551 0.275527C-0.0179492 0.568027 -0.0179492 1.04053 0.274551 1.33303L3.94205 5.00053L0.274551 8.66803C-0.0179492 8.96053 -0.0179492 9.43303 0.274551 9.72553C0.567051 10.018 1.03955 10.018 1.33205 9.72553L4.99955 6.05803L8.66705 9.72553C8.95955 10.018 9.43205 10.018 9.72455 9.72553C10.0171 9.43303 10.0171 8.96053 9.72455 8.66803L6.05705 5.00053L9.72455 1.33303C10.0096 1.04803 10.0096 0.568027 9.72455 0.283027Z"
+          fill="#8998D3"
+        />
+      </svg>
+    </div>
+    <div>
+      <div class="pages__title">Main Pages</div>
+      <ul class="pages__items">
+        <li class="pages__item"><a href="index.html">Home</a></li>
+        <li class="pages__item"><a href="page-projects.html">Projects</a></li>
+        <li class="pages__item">
+          <a href="get-involved.html">Get Involved</a>
+        </li>
+      </ul>
+      <!-- <div class="pages__title">Range of Products</div> -->
+      <ul class="pages__items">
+        <!-- <li class="pages__item">
+          <a href="page-catalog-FL.html">Fiber Laser Machines</a>
+        </li> -->
+      </ul>
+      <!-- <div class="pages__title">Different versions of the product</div> -->
+      <ul class="pages__items">
+        <!-- <li class="pages__item"><a href="page-good.html">Product -V 1</a></li> -->
+      </ul>
+    </div>
+    <div></div>
+  </div>
+</div>
+<!-- Страницы -->
+
+      <!-- Шапка -->
+      <main>
+        <section class="discoveries">
   <div class="discoveries__container">
     <h2 class="discoveries__title">Discover Our Groundbreaking Initiatives</h2>
     <div class="discoveries__inner">
@@ -57,10 +102,10 @@
       </p>
       <div class="discoveries__images">
         <div class="discoveries__img">
-          <img src="img/discoveries-img-1.png" alt="discoveries-img-1" />
+          <picture><source srcset="img/discoveries-img-1.webp" type="image/webp"><img src="img/discoveries-img-1.png" alt="discoveries-img-1" /></picture>
         </div>
         <div class="discoveries__img">
-          <img src="img/discoveries-img-2.png" alt="discoveries-img-2" />
+          <picture><source srcset="img/discoveries-img-2.webp" type="image/webp"><img src="img/discoveries-img-2.png" alt="discoveries-img-2" /></picture>
         </div>
       </div>
     </div>
@@ -74,7 +119,7 @@
   </div>
 </section>
 
-				<section class="ai-torah-codes">
+        <section class="ai-torah-codes">
   <div class="ai-torah-codes__container">
     <h2 class="ai-torah-codes__title">
       AI & Torah: <br />
@@ -113,7 +158,7 @@
   </div>
 </section>
 
-				<section class="feature-film-truth">
+        <section class="feature-film-truth">
   <div class="feature-film-truth__container">
     <h2 class="feature-film-truth__title">
       Boker Tov: <br />
@@ -151,7 +196,7 @@
   </div>
 </section>
 
-				<section class="ar-effects-tradition">
+        <section class="ar-effects-tradition">
   <div class="ar-effects-tradition__container">
     <h2 class="ar-effects-tradition__title">
       Feature Film: <br />
@@ -190,7 +235,7 @@
   </div>
 </section>
 
-				<section class="effects">
+        <section class="effects">
   <div class="effects__container">
     <h2 class="effects__title">
       AR Effects: <br />
@@ -220,14 +265,14 @@
       </svg>
     </a>
     <div class="effects__image">
-      <img class="lazy" data-src="img/effects-img.png" alt="effects-img" />
+      <picture><source data-srcset="img/effects-img.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/effects-img.png" alt="effects-img" /></picture>
     </div>
   </div>
 </section>
 
 
-				<!-- Влияние на сообщество: Платформа Хеврута -->
-				<section class="impact">
+        <!-- Влияние на сообщество: Платформа Хеврута -->
+        <section class="impact">
   <div class="impact__container">
     <h2 class="impact__title">Community Impact: Chevruta Platform</h2>
     <div class="impact__inner">
@@ -269,16 +314,16 @@
         </p>
       </div>
       <div class="impact__image">
-        <img class="lazy" data-src="img/impact-img.png" alt="impact-img" />
+        <picture><source data-srcset="img/impact-img.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/impact-img.png" alt="impact-img" /></picture>
       </div>
     </div>
   </div>
 </section>
 
-				<!-- Влияние на сообщество: Платформа Хеврута -->
+        <!-- Влияние на сообщество: Платформа Хеврута -->
 
-				<!-- Эти проекты — всего лишь начало -->
-				<section class="journey">
+        <!-- Эти проекты — всего лишь начало -->
+        <section class="journey">
   <div class="journey__container">
     <div class="journey__item">
       <p class="journey__descr">
@@ -289,16 +334,16 @@
     </div>
 
     <div class="journey__logo">
-      <img class="lazy" data-src="img/journey-logo.png" alt="journey-logo" />
+      <picture><source data-srcset="img/journey-logo.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/journey-logo.png" alt="journey-logo" /></picture>
     </div>
     <a href="#" class="journey__more">Get Involved Today</a>
   </div>
 </section>
 
-				<!-- Эти проекты — всего лишь начало -->
-			</main>
-			<!-- Подвал -->
-			<footer class="footer">
+        <!-- Эти проекты — всего лишь начало -->
+      </main>
+      <!-- Подвал -->
+      <footer class="footer">
   <div class="footer__container">
     <div class="footer__head">
       <a href="#" class="footer__logo"
@@ -381,8 +426,10 @@
   </div>
 </footer>
 
-			<!-- Подвал -->
-		</div>
-		<script src="js/app.min.js"></script>
-	</body>
+      <!-- Подвал -->
+    </div>
+    <script src="js/app.min.js?_v=20250127133000"></script>
+    <!-- Страницы -->
+    <script src="files/modalPages.js?_v=20250127133000"></script>
+  </body>
 </html>
