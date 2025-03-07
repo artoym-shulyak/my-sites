@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <link rel="icon" type="image/png" href="./img/favicon-96x96.png" sizes="96x96" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250307082628" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20250307082628" />
+  <title>Вакансии</title>
+</head>
+
+  <body>
+    <div class="wrapper">
+      <!-- Шапка -->
+      <header id="header" class="header">
+  <div class="header__container">
+    <!-- Верхняя часть -->
+    <div class="header__top">
+      <div class="header__info">
+        <address class="header__item">г.Нижний Новгород ул. Гоголя, дом 47, офис 7</address>
+        <p class="header__item">Без выходных с 8:00 - 21:00</p>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__list menu">
+          <li class="menu__item"><a href="#">ГЛАВНАЯ</a></li>
+          <li class="menu__item"><a href="#">О нас</a></li>
+          <li class="menu__item"><a href="#">ВАКАНСИИ</a></li>
+          <li class="menu__item"><a href="#">КОНТАКТЫ</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Средняя часть -->
+    <div class="header__middle">
+      <a href="#" class="header__logo">
+        <picture><source data-srcset="img/img-logo.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/img-logo.png" alt="Логотип компании Ремонт-Строй" /></picture>
+      </a>
+      <div class="header__rating">
+        <picture><source data-srcset="img/icon-flag.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="header__icon lazy" data-src="img/icon-flag.png" alt="Флажок рейтинга" /></picture>
+        <div class="header__text">
+          <p class="header__descr">Рейтинг на <span>Я</span>ндексе на основе ремонтов</p>
+          <div class="header__starts">
+            <picture><source data-srcset="img/icon-stars-4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/icon-stars-4.png" alt="Рейтинг: 4 из 5" /></picture>
+          </div>
+        </div>
+      </div>
+      <div class="header__call">
+        <a href="tel:8314234673" class="header__phone">+(831) 423-46-73</a>
+        <button class="header__btn" type="button" aria-label="Заказать звонок">Заказать звонок</button>
+      </div>
+      <div class="header__socials">
+        <a href="https://wa.me/123456789" class="header__social" aria-label="Перейти в WhatsApp">
+          <img class="lazy" data-src="img/icon-whatsapp.svg" alt="Иконка WhatsApp" />
+        </a>
+        <a href="https://t.me/yourchannel" class="header__social" aria-label="Перейти в Telegram">
+          <img class="lazy" data-src="img/icon-telegram.svg" alt="Иконка Telegram" />
+        </a>
+        <a href="https://vk.com/yourprofile" class="header__social" aria-label="Перейти в ВКонтакте">
+          <img class="lazy" data-src="img/icon-vk.svg" alt="Иконка ВКонтакте" />
+        </a>
+      </div>
+      <a href="#" class="header__call-up" aria-label="Вызвать замерщика"> ВЫЗВАТЬ ЗАМЕРЩИКА </a>
+      <!-- Не забудь спросить у чата джипити как сделаешь эту кнопку. -->
+      <!-- Сравника с другими сайтами, особенно со старым -->
+      <button id="burger-btn" class="header__burger">
+        <span></span>
+      </button>
+    </div>
+    <!-- Нижняя часть -->
+    <div class="header__bottom">
+      <ul class="header__services">
+        <li class="header__service">
+          <div class="header__name">Виды ремонта</div>
+          <div class="header__elems">
+            <a href="" class="header__elem">Ремонт квартиры</a>
+            <a href="" class="header__elem">Ремонт однокомнатной квартиры</a>
+            <a href="" class="header__elem">Ремонт квартиры в хрущевке</a>
+            <a href="" class="header__elem">Ремонт квартиры студии</a>
+            <a href="" class="header__elem">Ремонт трехкомнатной квартиры</a>
+            <a href="" class="header__elem">Ремонт дома</a>
+            <a href="" class="header__elem">Ремонт таунхауса</a>
+          </div>
+        </li>
+        <li class="header__service">
+          <div class="header__name">Ремонт квартир</div>
+          <div class="header__elems">
+            <a href="" class="header__elem">Ремонт квартиры</a>
+            <a href="" class="header__elem">Ремонт однокомнатной квартиры</a>
+            <a href="" class="header__elem">Ремонт квартиры в хрущевке</a>
+            <a href="" class="header__elem">Ремонт квартиры студии</a>
+            <a href="" class="header__elem">Ремонт трехкомнатной квартиры</a>
+            <a href="" class="header__elem">Ремонт дома</a>
+            <a href="" class="header__elem">Ремонт таунхауса</a>
+          </div>
+        </li>
+        <li id="misc-btn" class="header__service">Прочие услуги</li>
+        <li class="header__service">
+          <a href="#" aria-label="Рассчитать стоимость услуг">Рассчитать стоимость</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+      <!-- Шапка -->
+
+      <main>
+        <!-- Главный экран -->
+        <section class="head">
+          <div class="head__container">
+            <h1 class="head__title">Вакансии</h1>
+            <nav class="head__nav">
+              <ul class="head__menu">
+                <li>
+                  <a href="#" class="head__link">
+                    <div class="head__icon">
+                      <img class="lazy" data-src="img/icon-home.svg" alt="" />
+                    </div>
+                    <span>ГЛАВНАЯ</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="head__link head__link--active">Вакансии</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+
+        <!-- Сотрудничество -->
+        <section class="cooperation">
+          <div class="cooperation__container">
+            <!-- Информационная часть -->
+            <div class="cooperation__info">
+              <div class="cooperation__theme"><img class="lazy" data-src="img/icon-logo.svg" alt="Маленькая иконка логотипа" /><span>Сотрудничество</span></div>
+              <h2 class="cooperation__title">Вакансии</h2>
+              <p class="cooperation__descr">
+                Компания «Центр Отделки» всегда в поиске профессиональных сотрудников которые готовы показать свой уровень на деле, а с нашей стороны отличные условия по доходу и множество других
+                плюсов. Пишите или звоните нам, на данный момент требуются такие сотрудники:
+              </p>
+            </div>
+            <!-- Вакансии -->
+            <div class="cooperation__items">
+              <div class="cooperation__item">
+                <h3 class="cooperation__work">Мастер отделочных работ</h3>
+                <div class="cooperation__wrap">
+                  <h4 class="cooperation__sub-title">Обязанности:</h4>
+                  <ul class="cooperation__list">
+                    <li>чистовая отделка (косметический ремонт)</li>
+                    <li>черновые отделочные работы</li>
+                    <li>плиточные работы</li>
+                    <li>малярные работы</li>
+                    <li>демонтажные работы</li>
+                    <li>сантехнические</li>
+                    <li>электромонтажные</li>
+                    <li>монтаж конструкций из ГКЛ</li>
+                  </ul>
+                </div>
+                <div class="cooperation__wrap">
+                  <h4 class="cooperation__sub-title">Требования:</h4>
+                  <ul class="cooperation__list">
+                    <li>аккуратность</li>
+                    <li>умение работать на результат</li>
+                    <li>ответственность</li>
+                    <li>опыт более 3-х лет</li>
+                  </ul>
+                </div>
+                <div class="cooperation__wrap">
+                  <h4 class="cooperation__sub-title">Условия:</h4>
+                  <ul class="cooperation__list">
+                    <li>Удобный график работы</li>
+                    <li>Выплаты без задержек</li>
+                    <li>Удобный график работы</li>
+                    <li>Бесплатное оплачиваемое обучение</li>
+                    <li>Работа в округе проживания</li>
+                    <li>Постоянное обеспечение объектами вне зависимости от сезона</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="cooperation__item">
+                <h3 class="cooperation__work">Мастер отделочных работ</h3>
+                <div class="cooperation__wrap">
+                  <h4 class="cooperation__sub-title">Обязанности:</h4>
+                  <ul class="cooperation__list">
+                    <li>чистовая отделка (косметический ремонт)</li>
+                    <li>черновые отделочные работы</li>
+                    <li>плиточные работы</li>
+                    <li>малярные работы</li>
+                    <li>демонтажные работы</li>
+                    <li>сантехнические</li>
+                    <li>электромонтажные</li>
+                    <li>монтаж конструкций из ГКЛ</li>
+                  </ul>
+                </div>
+                <div class="cooperation__wrap">
+                  <h4 class="cooperation__sub-title">Требования:</h4>
+                  <ul class="cooperation__list">
+                    <li>аккуратность</li>
+                    <li>умение работать на результат</li>
+                    <li>ответственность</li>
+                    <li>опыт более 3-х лет</li>
+                  </ul>
+                </div>
+                <div class="cooperation__wrap">
+                  <h4 class="cooperation__sub-title">Условия:</h4>
+                  <ul class="cooperation__list">
+                    <li>Удобный график работы</li>
+                    <li>Выплаты без задержек</li>
+                    <li>Удобный график работы</li>
+                    <li>Бесплатное оплачиваемое обучение</li>
+                    <li>Работа в округе проживания</li>
+                    <li>Постоянное обеспечение объектами вне зависимости от сезона</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Обратная связь -->
+        <section class="feedback">
+  <div class="feedback__container">
+    <div class="feedback__body">
+      <!-- Информационная часть  -->
+      <div class="feedback__info">
+        <h3 class="feedback__text">Свяжитесь с нами любым <span>удобным способом</span></h3>
+        <a href="#" class="feedback__phone">+(831) 423-46-73</a>
+        <a href="#" class="feedback__social">
+          <div class="feedback__icon">
+            <img class="lazy" data-src="img/icon-whatsapp.svg" alt="" />
+          </div>
+          <div class="feedback__elem">
+            Написать в<br />
+            WhatsApp
+          </div>
+        </a>
+        <a href="#" class="feedback__social">
+          <div class="feedback__icon">
+            <img class="lazy" data-src="img/icon-telegram.svg" alt="" />
+          </div>
+          <div class="feedback__elem">
+            Написать в<br />
+            Telegram
+          </div>
+        </a>
+      </div>
+      <!-- Форма отправки -->
+      <div class="feedback__form">
+        <form class="feedback__wrapper" id="feedbackForm-base">
+          <h3 class="feedback__theme">
+            <span>Оставьте свои контакты, и мы свяжемся с вами</span>
+            <img class="lazy" data-src="img/icon-arrow-orange.svg" alt="" />
+          </h3>
+          <h2 class="feedback__title">Остались вопросы?</h2>
+          <div class="feedback__items">
+            <div class="feedback__item">
+              <input type="text" id="your-name-base" name="your-name" placeholder="Ваше имя" />
+              <div class="error-message" id="nameError-base"></div>
+            </div>
+            <div class="feedback__item">
+              <input type="text" id="your-phone-base" name="your-phone" placeholder="Ваш телефон" />
+              <div class="error-message" id="phoneError-base"></div>
+            </div>
+            <div class="feedback__item">
+              <textarea id="your-message-base" name="your-message" placeholder="Ваш комментарий"></textarea>
+            </div>
+            <div class="feedback__item honeypot">
+              <input type="text" id="email-base" name="email" placeholder="Ваш email" />
+            </div>
+          </div>
+          <button type="submit" class="feedback__submit">
+            <div>заказать бесплатную консультацию</div>
+            <img class="lazy" data-src="img/icon-arrow.svg" alt="" />
+          </button>
+          <label class="feedback__agree">
+            <input type="checkbox" id="agreement-base" name="agreement" />
+            <span class="feedback__checkmark"></span>
+            Согласие на
+            <a href="#" class="feedback__link">обработку персональных данных</a>
+          </label>
+          <div class="error-message" id="agreementError-base"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </main>
+
+      <!-- Подвал -->
+      <footer class="footer">
+  <div class="footer__container">
+    <!-- Верхняя часть -->
+    <div class="footer__wrapper">
+      <!-- Информационная часть -->
+      <div class="footer__info">
+        <a href="#" class="footer__logo">
+          <picture><source data-srcset="img/img-logo.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/img-logo.png" alt="" /></picture>
+        </a>
+        <div class="footer__wrap">
+          <div class="footer__text">МЫ ДОСТУПНЫ</div>
+          <div class="footer__mode">Без выходных с 8:00 - 21:00</div>
+        </div>
+        <adress class="footer__adress">г.Нижний Новгород ул. Гоголя, дом 47, офис 7</adress>
+      </div>
+      <!-- Навигация -->
+      <nav class="footer__nav">
+        <h3 class="footer__title">Навигация</h3>
+        <ul class="footer__items">
+          <li class="footer__item"><a href="#">Главная</a></li>
+          <li class="footer__item"><a href="#">О компании</a></li>
+          <li class="footer__item"><a href="#">О нас</a></li>
+          <li class="footer__item"><a href="#">Способы оплаты</a></li>
+          <li class="footer__item"><a href="#">Вакансии</a></li>
+          <li class="footer__item"><a href="#">Вызвать замерщика</a></li>
+          <li class="footer__item"><a href="#">Контакты</a></li>
+          <li class="footer__item"><a href="#">Калькулятор</a></li>
+        </ul>
+      </nav>
+      <!-- Контакты -->
+      <div class="footer__contacts">
+        <h3 class="footer__title">Связаться с нами</h3>
+        <a href="#" class="footer__phone">+(831) 423-46-73</a>
+        <div class="footer__elems">
+          <a href="#" class="footer__elem">
+            <img class="lazy" data-src="img/icon-whatsapp.svg" alt="" />
+          </a>
+          <a href="#" class="footer__elem">
+            <img class="lazy" data-src="img/icon-telegram.svg" alt="" />
+          </a>
+          <a href="#" class="footer__elem">
+            <img class="lazy" data-src="img/icon-vk.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Нижняя часть -->
+    <div class="footer__etc">
+      <div class="footer__copy">© 2026 Ремонт Строй | Все права защищены</div>
+      <a href="#" class="footer__politics">Политика конфиденциальности</a>
+    </div>
+    <!-- Кнопка якорь до верхей части всего контента -->
+    <a href="#" class="footer__up">
+      <span></span>
+    </a>
+  </div>
+</footer>
+
+<!-- Модальное окно "Заказать звонок" -->
+<div id="call-modal" class="modal">
+  <div class="modal__body">
+    <div class="modal__close" data-close>
+      <img class="lazy" data-src="img/icon-close.svg" alt="" />
+    </div>
+    <h4 class="modal__title">Заказать звонок</h4>
+    <form action="#" class="modal__form" id="feedbackForm-call">
+      <div class="modal__item">
+        <input type="text" name="your-name" id="your-name-call" placeholder="Ваше имя" />
+        <div class="error-message" id="nameError-call"></div>
+      </div>
+      <div class="modal__item">
+        <input type="text" name="your-phone" id="your-phone-call" placeholder="Ваше телефон" />
+        <div class="error-message" id="phoneError-call"></div>
+      </div>
+      <div class="feedback__item honeypot">
+        <input type="text" id="email-call" name="email" placeholder="Ваш email" />
+      </div>
+      <button class="modal__send" type="submit">Отправить</button>
+      <label class="modal__agree">
+        <input type="checkbox" id="agreement-call" name="agreement" />
+        <span class="modal__checkmark"></span>
+        Согласие на
+        <a href="#" class="modal__link">обработку персональных данных</a>
+      </label>
+      <div class="error-message" id="agreementError-call"></div>
+    </form>
+  </div>
+</div>
+
+
+<!-- Модальное окно "Оставить заявку" -->
+<div id="up-modal" class="modal">
+  <div class="modal__body">
+    <div class="modal__close" data-close>
+      <img class="lazy" data-src="img/icon-close.svg" alt="" />
+    </div>
+    <h4 class="modal__title">Оставить заявку</h4>
+    <form action="#" class="modal__form" id="feedbackForm-call-up">
+      <div class="modal__item">
+        <input type="text" name="your-name" id="your-name-call-up" placeholder="Ваше имя" />
+        <div class="error-message" id="nameError-call-up"></div>
+      </div>
+      <div class="modal__item">
+        <input type="text" name="your-phone" id="your-phone-call-up" placeholder="Ваше телефон" />
+        <div class="error-message" id="phoneError-call-up"></div>
+      </div>
+      <div class="modal__item">
+        <textarea name="message" id="your-message-call-up" name="your-message" placeholder="Ваш комментарий"></textarea>
+      </div>
+      <div class="feedback__item honeypot">
+        <input type="text" id="email-call-up" name="email" placeholder="Ваш email" />
+      </div>
+      <button class="modal__send" type="submit">Отправить</button>
+      <label class="modal__agree">
+        <input type="checkbox" id="agreement-call-up" name="agreement" />
+        <span class="modal__checkmark"></span>
+        Согласие на
+        <a href="#" class="modal__link">обработку персональных данных</a>
+      </label>
+      <div class="error-message" id="agreementError-call-up"></div>
+    </form>
+  </div>
+</div>
+
+
+<!-- Модальное окно "Вызвать замерщика" -->
+<div id="work-modal" class="modal">
+  <div class="modal__body">
+    <div class="modal__close" data-close>
+      <img class="lazy" data-src="img/icon-close.svg" alt="" />
+    </div>
+    <h4 class="modal__title">Вызвать замерщика</h4>
+    <form action="#" class="modal__form" id="feedbackForm-work">
+      <div class="modal__item">
+        <input type="text" name="your-name" id="your-name-work" placeholder="Ваше имя" />
+        <div class="error-message" id="nameError-work"></div>
+      </div>
+      <div class="modal__item">
+        <input type="text" name="your-phone" id="your-phone-work" placeholder="Ваше телефон" />
+        <div class="error-message" id="phoneError-work"></div>
+      </div>
+      <div class="feedback__item honeypot">
+        <input type="text" id="email-work" name="email" placeholder="Ваш email" />
+      </div>
+      <button class="modal__send" type="submit">Отправить</button>
+      <label class="modal__agree">
+        <input type="checkbox" id="agreement-work" name="agreement" />
+        <span class="modal__checkmark"></span>
+        Согласие на
+        <a href="#" class="modal__link">обработку персональных данных</a>
+      </label>
+      <div class="error-message" id="agreementError-work"></div>
+    </form>
+  </div>
+</div>
+
+
+<!-- Модальное окно "Прочие услуги" -->
+<div id="misc-modal" class="misc">
+  <div class="misc__container">
+    <div class="misc__close" data-close>
+      <img class="lazy" data-src="img/icon-close.svg" alt="" />
+    </div>
+    <!-- Первая колонка -->
+    <div class="misc__wrap _first">
+      <a href="#" class="misc__elem" data-target="remont">Виды ремонта</a>
+      <a href="#" class="misc__elem" data-target="prices">Цены</a>
+      <a href="#" class="misc__elem" data-target="finish">Отделка</a>
+    </div>
+    <!-- Вторая колонка -->
+    <div class="misc__wrap _second">
+      <!-- Относятся к "Виды ремонт" -->
+      <div class="misc__list" data-group="remont">
+        <a href="#" class="misc__elem _link" data-target="cosmetic">Косметичесикй ремонт</a>
+        <a href="#" class="misc__elem _link" data-target="rough">Черновой ремонт</a>
+        <a href="#" class="misc__elem _link" data-target="designer">Дизайнерский ремонт</a>
+      </div>
+      <!-- Относятся к "Цены" -->
+      <div class="misc__list" data-group="prices">
+        <a href="#" class="misc__elem _link" data-target="costs">Цены на ремонт</a>
+        <a href="#" class="misc__elem _link" data-target="payment">Оплата</a>
+      </div>
+      <!-- Относятся к "Отделка" -->
+      <div class="misc__list" data-group="finish">
+        <a href="#" class="misc__elem" data-target="balcony">Отделка балкона</a>
+        <a href="#" class="misc__elem" data-target="room">Отделка помещений</a>
+      </div>
+    </div>
+    <!-- Третья колонка -->
+    <div class="misc__wrap _third">
+      <div class="misc__list" data-group="balcony">
+        <a href="#" class="misc__elem _link">Отделка балкона</a>
+        <a href="#" class="misc__elem _link">Отделка помещений</a>
+        <a href="#" class="misc__elem _link">Отделочные работы</a>
+      </div>
+      <div class="misc__list" data-group="room">
+        <a href="#" class="misc__elem _link">Отделка квартиры</a>
+        <a href="#" class="misc__elem _link">Отделка офиса</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Фиксированные кнопки -->
+<div class="fix-btns">
+  <a href="#" class="fix-btns__item">
+    <div class="fix-btns__icon">
+      <img class="lazy" data-src="img/icon-calc.svg" alt="" />
+    </div>
+    <span>Калькулятор</span>
+  </a>
+  <a href="#" class="fix-btns__item">
+    <div class="fix-btns__icon">
+      <img class="lazy" data-src="img/icon-whatsapp.svg" alt="" />
+    </div>
+    <span>Написать в WhatsApp</span>
+  </a>
+  <a href="#" class="fix-btns__item">
+    <div class="fix-btns__icon">
+      <img class="lazy" data-src="img/icon-telegram-white.svg" alt="" />
+    </div>
+    <span>Написать в Telegram</span>
+  </a>
+  <a href="#" class="fix-btns__item">
+    <div class="fix-btns__icon">
+      <img class="lazy" data-src="img/icon-call.svg" alt="" />
+    </div>
+    <span>Позвонить</span>
+  </a>
+</div>
+
+
+<!-- Мобильная версия -->
+<div id="md-menu" class="md-menu">
+  <div class="md-menu__body">
+    <div class="md-menu__close" data-close>
+      <img class="lazy" data-src="img/icon-close.svg" alt="" />
+    </div>
+    <!-- Основное меню -->
+    <nav class="md-menu__nav">
+      <div class="md-menu__list">
+        <a href="#" class="md-menu__link">Главная</a>
+        <a href="#" class="md-menu__link">О компании</a>
+        <a href="#" class="md-menu__link">Вакансии</a>
+        <a href="#" class="md-menu__link">Контакты</a>
+        <a href="#" class="md-menu__link">Вызвать замерщика</a>
+        <a href="#" class="md-menu__link"> Рассчитать стоиомсть </a>
+      </div>
+    </nav>
+    <!-- Услуги -->
+    <nav class="md-menu__nav">
+      <div class="md-menu__services">
+        <div class="md-menu__wrap">
+          <a href="#" class="md-menu__service">Ремонт</a>
+          <div class="md-menu__elems">
+            <a href="" class="md-menu__elem">Ремонт квартир</a>
+            <a href="" class="md-menu__elem">Ремонт офисов</a>
+          </div>
+        </div>
+        <div class="md-menu__wrap">
+          <a href="#" class="md-menu__service">Отделка</a>
+          <div class="md-menu__elems">
+            <a href="" class="md-menu__elem">Ремонт квартир</a>
+            <a href="" class="md-menu__elem">Ремонт офисов</a>
+          </div>
+        </div>
+        <div class="md-menu__wrap">
+          <a href="#" class="md-menu__service">Строительство</a>
+          <div class="md-menu__elems">
+            <a href="" class="md-menu__elem">Ремонт квартир</a>
+            <a href="" class="md-menu__elem">Ремонт офисов</a>
+          </div>
+        </div>
+        <div class="md-menu__wrap">
+          <a href="#" class="md-menu__service">Окна</a>
+          <div class="md-menu__elems">
+            <a href="" class="md-menu__elem">Ремонт квартир</a>
+            <a href="" class="md-menu__elem">Ремонт офисов</a>
+          </div>
+        </div>
+        <div class="md-menu__wrap">
+          <a href="#" class="md-menu__service">Цены</a>
+          <div class="md-menu__elems">
+            <a href="" class="md-menu__elem">Ремонт квартир</a>
+            <a href="" class="md-menu__elem">Ремонт офисов</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Прочие вещи: Адресс, График работы, Социальные сети -->
+    <adress class="md-menu__adress"> г.Нижний Новгород ул. Гоголя, дом 47, офис 7 </adress>
+    <div class="md-menu__clock">Без выходных с 8:00 - 21:00</div>
+    <div class="md-menu__items">
+      <a href="https://wa.me/123456789" class="md-menu__item" aria-label="Перейти в WhatsApp">
+        <img class="lazy" data-src="img/icon-whatsapp.svg" alt="Иконка WhatsApp" />
+      </a>
+      <a href="https://t.me/yourchannel" class="md-menu__item" aria-label="Перейти в Telegram">
+        <img class="lazy" data-src="img/icon-telegram.svg" alt="Иконка Telegram" />
+      </a>
+      <a href="https://vk.com/yourprofile" class="md-menu__item" aria-label="Перейти в ВКонтакте">
+        <img class="lazy" data-src="img/icon-vk.svg" alt="Иконка ВКонтакте" />
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- <a href="#" class="md-menu__service">Ремонт квартир</a>
+<a href="#" class="md-menu__service">Отделка</a>
+<a href="#" class="md-menu__service">Строительство</a>
+<a href="#" class="md-menu__service">Окна</a>
+<a href="#" class="md-menu__service">Цены</a> -->
+
+
+<!-- Страницы -->
+<div class="btn-pages">НАВИГАЦИЯ</div>
+<div class="pages">
+  <div class="pages__body">
+    <div data-close class="pages__close">
+      <img class="lazy" data-src="img/icon-close.svg" alt="" />
+    </div>
+    <div class="pages__info">
+      <div class="pages__title">Страницы</div>
+      <ul class="pages__items">
+        <a class="_done" href="index.html">Главная</a>
+        <a class="_done" href="about-us.html">О компании</a>
+        <a class="_done" href="vacancy.html">Вакансии</a>
+        <a class="_done" href="contacts.html">Контакты</a>
+        <a class="_done" href="call-up.html">Вызвать замерщика</a>
+        <a class="_done" href="payment.html">Способы оплаты</a>
+        <a class="_done" href="service.html">Услуги: Черновой ремнот/Косметический...</a>
+        <a class="_done" href="price-list.html">Цены на ремонт квартир и другие</a>
+        <a class="_done" href="build.html">Строительство домов</a>
+        <a class="_done" href="build-house.html">Дома из бревна/кирпича...</a>
+        <a class="_done" href="politics.html">Политика конфиденциальности</a>
+        <a class="_done" href="404.html">Страница не найдена</a>
+        <a class="_done" href="calculator.html">Калькулятор</a>
+      </ul>
+      <div class="pages__title">Модальные окна</div>
+      <div class="pages__btns">
+        <a class="_done" id="up-btn" href="#">Оставить заявку</a>
+        <a class="_done" id="call-btn" href="#">Заказать звонок</a>
+        <a class="_done" id="work-btn" href="#">Вызвать замерщика</a>
+        <a class="_done" href="#">Прочие услуги: Работает в шапке</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+    <script src="js/app.min.js?_v=20250307082628"></script>
+  </body>
+</html>
