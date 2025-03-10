@@ -1,13 +1,14 @@
 <!doctype html>
 <html lang="ru">
   <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-  <link rel="icon" type="image/png" href="./img/favicon-96x96.png" sizes="96x96" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250307082628" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20250307082628" />
-  <title>Цены на ремонт квартир</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<link rel="icon" type="image/png" href="./img/favicon-96x96.png" sizes="96x96" />
+	<link rel="stylesheet" href="https://unpkg.com/beerslider/dist/BeerSlider.css?_v=20250310114408" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250310114408" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20250310114408" />
+	<title>Цены на ремонт квартир</title>
 </head>
 
   <body>
@@ -60,8 +61,6 @@
         </a>
       </div>
       <a href="#" class="header__call-up" aria-label="Вызвать замерщика"> ВЫЗВАТЬ ЗАМЕРЩИКА </a>
-      <!-- Не забудь спросить у чата джипити как сделаешь эту кнопку. -->
-      <!-- Сравника с другими сайтами, особенно со старым -->
       <button id="burger-btn" class="header__burger">
         <span></span>
       </button>
@@ -95,7 +94,7 @@
         </li>
         <li id="misc-btn" class="header__service">Прочие услуги</li>
         <li class="header__service">
-          <a href="#" aria-label="Рассчитать стоимость услуг">Рассчитать стоимость</a>
+          <a href="#" aria-label="Рассчитать стоимость услуг">Рассчитать стоимость онлайн</a>
         </li>
       </ul>
     </div>
@@ -542,39 +541,58 @@
           </div>
         </section>
 
-        <!-- Ваша квартира до и после -->
-        <section class="your-flat">
-  <div class="your-flat__container">
-    <div class="your-flat__theme">
-      <img class="lazy" data-src="img/icon-logo.svg" alt="Маленькая иконка логотипа" />
-      <span>ВАША КВАРТИРА ДО И ПОСЛЕ</span>
-    </div>
-    <h2 class="your-flat__title">Как меняется Ваша квартира в процессе ремонта</h2>
-    <p class="your-flat__descr">Уже после несколько недель после начала ремонта</p>
-    <!-- Слайдер -->
-    <div class="swiper your-flat__swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <picture><source srcset="img/img-photo.webp" type="image/webp"><img src="img/img-photo.png" loading="lazy" alt="" /></picture>
-        </div>
-        <div class="swiper-slide">
-          <picture><source srcset="img/img-photo.webp" type="image/webp"><img src="img/img-photo.png" loading="lazy" alt="" /></picture>
-        </div>
-        <div class="swiper-slide">
-          <picture><source srcset="img/img-photo.webp" type="image/webp"><img src="img/img-photo.png" loading="lazy" alt="" /></picture>
-        </div>
-        <div class="swiper-slide">
-          <picture><source srcset="img/img-photo.webp" type="image/webp"><img src="img/img-photo.png" loading="lazy" alt="" /></picture>
-        </div>
-      </div>
-    </div>
-    <div class="your-flat__arrows">
-      <button class="your-flat__prev"><span></span></button>
-      <div class="your-flat__pagination"></div>
-      <button class="your-flat__next"><span></span></button>
-    </div>
-  </div>
-</section>
+        				<!-- Ваша квартира до и после -->
+				<section class="your-flat">
+					<div class="your-flat__container">
+						<div class="your-flat__theme">
+							<img class="lazy" data-src="img/icon-logo.svg" alt="Маленькая иконка логотипа" />
+							<span>ВАША КВАРТИРА ДО И ПОСЛЕ</span>
+						</div>
+						<h2 class="your-flat__title">Как меняется Ваша квартира в процессе ремонта</h2>
+						<!-- Слайдер -->
+						<div class="swiper your-flat__swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="your-flat__beer" data-beer-slider>
+										<img src="img/img-photo.png" alt="Before" />
+										<div class="beer-reveal">
+											<img src="img/img-photo-wb.png" alt="After" />
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="your-flat__beer" data-beer-slider>
+										<img src="img/img-photo.png" alt="Before" />
+										<div class="beer-reveal">
+											<img src="img/img-photo-wb.png" alt="After" />
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="your-flat__beer" data-beer-slider>
+										<img src="img/img-photo.png" alt="Before" />
+										<div class="beer-reveal">
+											<img src="img/img-photo-wb.png" alt="After" />
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="your-flat__beer" data-beer-slider>
+										<img src="img/img-photo.png" alt="Before" />
+										<div class="beer-reveal">
+											<img src="img/img-photo-wb.png" alt="After" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="your-flat__arrows">
+							<button class="your-flat__prev"><span></span></button>
+							<div class="your-flat__pagination"></div>
+							<button class="your-flat__next"><span></span></button>
+						</div>
+					</div>
+				</section>
 
 
         <!-- Наши преимущества -->
@@ -651,7 +669,7 @@
     <!-- Рейтнг -->
     <div class="clients__ratings">
       <div class="clients__item">
-        <picture><source data-srcset="img/icon-flag.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="clients__icon" class="lazy" data-src="img/icon-flag.png" alt="Флажок рейтинга" /></picture>
+        <picture><source data-srcset="img/icon-flag.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="clients__icon lazy" data-src="img/icon-flag.png" alt="Флажок рейтинга" /></picture>
         <div class="clients__text">
           <p class="clients__lead">Рейтинг на <span>Я</span>ндексе на основе ремонтов</p>
           <div class="clients__starts">
@@ -660,7 +678,7 @@
         </div>
       </div>
       <div class="clients__item">
-        <picture><source data-srcset="img/icon-flag-google.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="clients__icon" class="lazy" data-src="img/icon-flag-google.png" alt="Флажок рейтинга" /></picture>
+        <picture><source data-srcset="img/icon-flag-google.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="clients__icon lazy" data-src="img/icon-flag-google.png" alt="Флажок рейтинга" /></picture>
         <div class="clients__text">
           <p class="clients__lead">Рейтинг на <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span> на основе ремонтов</p>
           <div class="clients__starts">
@@ -1029,7 +1047,8 @@
 
 
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20250307082628"></script>
-    <script src="js/app.min.js?_v=20250307082628"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20250310114408"></script>
+		<script src="https://unpkg.com/beerslider/dist/BeerSlider.js?_v=20250310114408"></script>
+    <script src="js/app.min.js?_v=20250310114408"></script>
   </body>
 </html>

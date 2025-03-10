@@ -1,19 +1,20 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-  <link rel="icon" type="image/png" href="./img/favicon-96x96.png" sizes="96x96" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250307082628" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20250307082628" />
-  <title>Контакты</title>
+	<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<link rel="icon" type="image/png" href="./img/favicon-96x96.png" sizes="96x96" />
+	<link rel="stylesheet" href="https://unpkg.com/beerslider/dist/BeerSlider.css?_v=20250310114408" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250310114408" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20250310114408" />
+	<title>Контакты</title>
 </head>
 
-  <body>
-    <div class="wrapper">
-      <!-- Шапка -->
-      <header id="header" class="header">
+	<body>
+		<div class="wrapper">
+			<!-- Шапка -->
+			<header id="header" class="header">
   <div class="header__container">
     <!-- Верхняя часть -->
     <div class="header__top">
@@ -60,8 +61,6 @@
         </a>
       </div>
       <a href="#" class="header__call-up" aria-label="Вызвать замерщика"> ВЫЗВАТЬ ЗАМЕРЩИКА </a>
-      <!-- Не забудь спросить у чата джипити как сделаешь эту кнопку. -->
-      <!-- Сравника с другими сайтами, особенно со старым -->
       <button id="burger-btn" class="header__burger">
         <span></span>
       </button>
@@ -95,7 +94,7 @@
         </li>
         <li id="misc-btn" class="header__service">Прочие услуги</li>
         <li class="header__service">
-          <a href="#" aria-label="Рассчитать стоимость услуг">Рассчитать стоимость</a>
+          <a href="#" aria-label="Рассчитать стоимость услуг">Рассчитать стоимость онлайн</a>
         </li>
       </ul>
     </div>
@@ -103,105 +102,105 @@
 </header>
 
 
-      <main>
-        <!-- Главный экран -->
-        <section class="head _contacts">
-          <div class="head__container">
-            <h1 class="head__title">Контакты</h1>
-            <nav class="head__nav">
-              <ul class="head__menu">
-                <li>
-                  <a href="#" class="head__link">
-                    <div class="head__icon">
-                      <img class="lazy" data-src="img/icon-home.svg" alt="" />
-                    </div>
-                    <span>ГЛАВНАЯ</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="head__link head__link--active">Контакты</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </section>
+			<main>
+				<!-- Главный экран -->
+				<section class="head _contacts">
+					<div class="head__container">
+						<h1 class="head__title">Контакты</h1>
+						<nav class="head__nav">
+							<ul class="head__menu">
+								<li>
+									<a href="#" class="head__link">
+										<div class="head__icon">
+											<img class="lazy" data-src="img/icon-home.svg" alt="" />
+										</div>
+										<span>ГЛАВНАЯ</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="head__link head__link--active">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</section>
 
-        <!-- Обратная связь -->
-        <section class="feedback _mt4">
-          <div class="feedback__container">
-            <div class="feedback__body">
-              <!-- Информационная часть  -->
-              <div class="feedback__info">
-                <h3 class="feedback__text">Свяжитесь с нами любым <span>удобным способом</span></h3>
-                <a href="#" class="feedback__phone">+(831) 423-46-73</a>
-                <a href="#" class="feedback__social">
-                  <div class="feedback__icon">
-                    <img class="lazy" data-src="img/icon-whatsapp.svg" alt="" />
-                  </div>
-                  <div class="feedback__elem">
-                    Написать в<br />
-                    WhatsApp
-                  </div>
-                </a>
-                <a href="#" class="feedback__social">
-                  <div class="feedback__icon">
-                    <img class="lazy" data-src="img/icon-telegram.svg" alt="" />
-                  </div>
-                  <div class="feedback__elem">
-                    Написать в<br />
-                    Telegram
-                  </div>
-                </a>
-              </div>
-              <!-- Форма отправки -->
-              <div class="feedback__form">
-                <form class="feedback__wrapper" id="feedbackForm-contacts">
-                  <h3 class="feedback__theme">
-                    <span>Оставьте свои контакты, и мы свяжемся с вами</span>
-                    <img class="lazy" data-src="img/icon-arrow-orange.svg" alt="" />
-                  </h3>
-                  <h2 class="feedback__title">Консультация</h2>
-                  <div class="feedback__items">
-                    <div class="feedback__item">
-                      <input type="text" id="your-name-contacts" name="your-name" placeholder="Ваше имя" />
-                      <div class="error-message" id="nameError-contacts"></div>
-                    </div>
-                    <div class="feedback__item">
-                      <input type="text" id="your-phone-contacts" name="your-phone" placeholder="Ваш телефон" />
-                      <div class="error-message" id="phoneError-contacts"></div>
-                    </div>
-                    <div class="feedback__item">
-                      <textarea name="message" id="your-message-contacts" name="your-message" placeholder="Ваш комментарий"></textarea>
-                    </div>
-                    <div class="feedback__item honeypot">
-                      <input type="text" id="email-contacts" name="email" placeholder="Ваш email" />
-                    </div>
-                  </div>
-                  <button class="feedback__submit">
-                    <span>заказать бесплатную консультацию</span>
-                    <img class="lazy" data-src="img/icon-arrow.svg" alt="" />
-                  </button>
-                  <label class="feedback__agree">
-                    <input type="checkbox" id="agreement-contacts" name="agreement" />
-                    <span class="feedback__checkmark"></span>
-                    Согласие на
-                    <a href="#" class="feedback__link">обработку персональных данных</a>
-                  </label>
-                  <div class="error-message" id="agreementError-contacts"></div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
+				<!-- Обратная связь -->
+				<section class="feedback _mt4">
+					<div class="feedback__container">
+						<div class="feedback__body">
+							<!-- Информационная часть  -->
+							<div class="feedback__info">
+								<h3 class="feedback__text">Свяжитесь с нами любым <span>удобным способом</span></h3>
+								<a href="#" class="feedback__phone">+(831) 423-46-73</a>
+								<a href="#" class="feedback__social">
+									<div class="feedback__icon">
+										<img class="lazy" data-src="img/icon-whatsapp.svg" alt="" />
+									</div>
+									<div class="feedback__elem">
+										Написать в<br />
+										WhatsApp
+									</div>
+								</a>
+								<a href="#" class="feedback__social">
+									<div class="feedback__icon">
+										<img class="lazy" data-src="img/icon-telegram.svg" alt="" />
+									</div>
+									<div class="feedback__elem">
+										Написать в<br />
+										Telegram
+									</div>
+								</a>
+							</div>
+							<!-- Форма отправки -->
+							<div class="feedback__form">
+								<form class="feedback__wrapper" id="feedbackForm-contacts">
+									<h3 class="feedback__theme">
+										<span>Оставьте свои контакты, и мы свяжемся с вами</span>
+										<img class="lazy" data-src="img/icon-arrow-orange.svg" alt="" />
+									</h3>
+									<h2 class="feedback__title">Консультация</h2>
+									<div class="feedback__items">
+										<div class="feedback__item">
+											<input type="text" id="your-name-contacts" name="your-name" placeholder="Ваше имя" />
+											<div class="error-message" id="nameError-contacts"></div>
+										</div>
+										<div class="feedback__item">
+											<input type="text" id="your-phone-contacts" name="your-phone" placeholder="Ваш телефон" />
+											<div class="error-message" id="phoneError-contacts"></div>
+										</div>
+										<div class="feedback__item">
+											<textarea name="message" id="your-message-contacts" name="your-message" placeholder="Ваш комментарий"></textarea>
+										</div>
+										<div class="feedback__item honeypot">
+											<input type="text" id="email-contacts" name="email" placeholder="Ваш email" />
+										</div>
+									</div>
+									<button class="feedback__submit">
+										<span>заказать бесплатную консультацию</span>
+										<img class="lazy" data-src="img/icon-arrow.svg" alt="" />
+									</button>
+									<label class="feedback__agree">
+										<input type="checkbox" id="agreement-contacts" name="agreement" />
+										<span class="feedback__checkmark"></span>
+										Согласие на
+										<a href="#" class="feedback__link">обработку персональных данных</a>
+									</label>
+									<div class="error-message" id="agreementError-contacts"></div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
 
-        <!-- Местоположения -->
-        <section class="map-img">
-          <picture><source data-srcset="img/img-maps.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/img-maps.png" alt="" /></picture>
-        </section>
-      </main>
+				<!-- Местоположения -->
+				<section class="map-img">
+					<picture><source data-srcset="img/img-maps.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/img-maps.png" alt="" /></picture>
+				</section>
+			</main>
 
-      <!-- Подвал -->
-      <footer class="footer">
+			<!-- Подвал -->
+			<footer class="footer">
   <div class="footer__container">
     <!-- Верхняя часть -->
     <div class="footer__wrapper">
@@ -551,8 +550,10 @@
 </div>
 
 
-      <!-- Подвал -->
-    </div>
-    <script src="js/app.min.js?_v=20250307082628"></script>
-  </body>
+			<!-- Подвал -->
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20250310114408"></script>
+		<script src="https://unpkg.com/beerslider/dist/BeerSlider.js?_v=20250310114408"></script>
+		<script src="js/app.min.js?_v=20250310114408"></script>
+	</body>
 </html>

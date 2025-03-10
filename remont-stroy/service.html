@@ -1,19 +1,20 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-  <link rel="icon" type="image/png" href="./img/favicon-96x96.png" sizes="96x96" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250307082628" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20250307082628" />
-  <title>Черновой ремонт</title>
+	<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<link rel="icon" type="image/png" href="./img/favicon-96x96.png" sizes="96x96" />
+	<link rel="stylesheet" href="https://unpkg.com/beerslider/dist/BeerSlider.css?_v=20250310114408" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250310114408" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20250310114408" />
+	<title>Черновой ремонт</title>
 </head>
 
-  <body>
-    <div class="wrapper">
-      <!-- Шапка -->
-      <header id="header" class="header">
+	<body>
+		<div class="wrapper">
+			<!-- Шапка -->
+			<header id="header" class="header">
   <div class="header__container">
     <!-- Верхняя часть -->
     <div class="header__top">
@@ -60,8 +61,6 @@
         </a>
       </div>
       <a href="#" class="header__call-up" aria-label="Вызвать замерщика"> ВЫЗВАТЬ ЗАМЕРЩИКА </a>
-      <!-- Не забудь спросить у чата джипити как сделаешь эту кнопку. -->
-      <!-- Сравника с другими сайтами, особенно со старым -->
       <button id="burger-btn" class="header__burger">
         <span></span>
       </button>
@@ -95,7 +94,7 @@
         </li>
         <li id="misc-btn" class="header__service">Прочие услуги</li>
         <li class="header__service">
-          <a href="#" aria-label="Рассчитать стоимость услуг">Рассчитать стоимость</a>
+          <a href="#" aria-label="Рассчитать стоимость услуг">Рассчитать стоимость онлайн</a>
         </li>
       </ul>
     </div>
@@ -103,244 +102,263 @@
 </header>
 
 
-      <main>
-        <!-- Главный экран -->
-        <section class="head">
-          <div class="head__container">
-            <h1 class="head__title">Черновой ремонт</h1>
-            <nav class="head__nav">
-              <ul class="head__menu">
-                <li>
-                  <a href="#" class="head__link">
-                    <div class="head__icon">
-                      <img class="lazy" data-src="img/icon-home.svg" alt="" />
-                    </div>
-                    <span>ГЛАВНАЯ</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="head__link head__link--active">Черновой ремонт</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </section>
+			<main>
+				<!-- Главный экран -->
+				<section class="head">
+					<div class="head__container">
+						<h1 class="head__title">Черновой ремонт</h1>
+						<nav class="head__nav">
+							<ul class="head__menu">
+								<li>
+									<a href="#" class="head__link">
+										<div class="head__icon">
+											<img class="lazy" data-src="img/icon-home.svg" alt="" />
+										</div>
+										<span>ГЛАВНАЯ</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="head__link head__link--active">Черновой ремонт</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</section>
 
-        <!-- Услуга -->
-        <section class="service">
-          <div class="service__container">
-            <div class="service__wrapper">
-              <!-- Информационная часть  -->
-              <div class="service__body">
-                <div class="service__discount">-10%</div>
-                <h3 class="service__name">Черновой ремонт</h3>
-                <p class="service__text">Предусматривает выполнение работ по подготовке комнат к финишной и чистовой отделке. Что входит:</p>
-                <h4 class="service__lead">Демонтаж</h4>
-                <ul class="service__list">
-                  <li>Старой проводки</li>
-                  <li>Перегородок</li>
-                  <li>Напольного покрытия</li>
-                  <li>Потолков</li>
-                  <li>Стяжки</li>
-                  <li>Труб ГВС, ХВС, канализации</li>
-                  <li>Дверей</li>
-                </ul>
-                <h4 class="service__lead">Черновые работы</h4>
-                <ul class="service__list">
-                  <li>Монтаж труб ГВС, ХВС, канализации</li>
-                  <li>Разводка электропроводки</li>
-                  <li>Штукатурка стен и потолка</li>
-                  <li>Стяжка пола и наливной пол</li>
-                  <li>Клининг помещения</li>
-                </ul>
-                <div class="service__wrap">
-                  <div class="service__price">от 5 200 ₽/м2</div>
-                  <div class="service__term">Срок работы: от 35 дней</div>
-                </div>
-                <a href="#" class="service__submit">
-                  <span>Оставить заявку</span>
-                  <img class="lazy" data-src="img/icon-arrow.svg" alt="Иконка для кнопки" />
-                </a>
-              </div>
-              <!-- Слайдер -->
-              <div class="swiper service__swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <picture><source data-srcset="img/img-photo.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/img-photo.png" alt="" /></picture>
-                  </div>
-                  <div class="swiper-slide">
-                    <picture><source data-srcset="img/img-photo.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/img-photo.png" alt="" /></picture>
-                  </div>
-                  <div class="swiper-slide">
-                    <picture><source data-srcset="img/img-photo.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/img-photo.png" alt="" /></picture>
-                  </div>
-                </div>
-                <!-- Навигация -->
-                <div class="service__arrows">
-                  <div class="service__prev _prev"><span></span></div>
-                  <div class="service__next _next"><span></span></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+				<!-- Услуга -->
+				<section class="service">
+					<div class="service__container">
+						<div class="service__wrapper">
+							<!-- Информационная часть  -->
+							<div class="service__body">
+								<div class="service__discount">-10%</div>
+								<h3 class="service__name">Черновой ремонт</h3>
+								<p class="service__text">Предусматривает выполнение работ по подготовке комнат к финишной и чистовой отделке. Что входит:</p>
+								<h4 class="service__lead">Демонтаж</h4>
+								<ul class="service__list">
+									<li>Старой проводки</li>
+									<li>Перегородок</li>
+									<li>Напольного покрытия</li>
+									<li>Потолков</li>
+									<li>Стяжки</li>
+									<li>Труб ГВС, ХВС, канализации</li>
+									<li>Дверей</li>
+								</ul>
+								<h4 class="service__lead">Черновые работы</h4>
+								<ul class="service__list">
+									<li>Монтаж труб ГВС, ХВС, канализации</li>
+									<li>Разводка электропроводки</li>
+									<li>Штукатурка стен и потолка</li>
+									<li>Стяжка пола и наливной пол</li>
+									<li>Клининг помещения</li>
+								</ul>
+								<div class="service__wrap">
+									<div class="service__price">от 5 200 ₽/м2</div>
+									<div class="service__term">Срок работы: от 35 дней</div>
+								</div>
+								<a href="#" class="service__submit">
+									<span>Оставить заявку</span>
+									<img class="lazy" data-src="img/icon-arrow.svg" alt="Иконка для кнопки" />
+								</a>
+							</div>
+							<!-- Слайдер -->
+							<div class="swiper service__swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<picture><source data-srcset="img/img-photo.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/img-photo.png" alt="" /></picture>
+									</div>
+									<div class="swiper-slide">
+										<picture><source data-srcset="img/img-photo.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/img-photo.png" alt="" /></picture>
+									</div>
+									<div class="swiper-slide">
+										<picture><source data-srcset="img/img-photo.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/img-photo.png" alt="" /></picture>
+									</div>
+								</div>
+								<!-- Навигация -->
+								<div class="service__arrows">
+									<div class="service__prev _prev"><span></span></div>
+									<div class="service__next _next"><span></span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 
-        <!-- Краткое содержание -->
-        <section class="shor-descr">
-          <div class="shor-descr__container">
-            <div class="shor-descr__body">
-              <h2 class="shor-descr__title">Косметический ремонт квартир</h2>
-              <p class="shor-descr__descr">
-                Косметический ремонт квартирв Нижнем Новгороде – одна из специализаций компании Ремонт Строй. Профессиональное обновление интерьера способно добавить изюминку, эстетичный вид и
-                определенную элегантность вашему интерьеру. Обратившись к профессионалам из нашей компании, уже через пару недель вы сможете любоваться совершенно новым, стильным, аккуратным и
-                комфортабельным интерьером.
-              </p>
-            </div>
-            <div class="shor-descr__view">
-              <picture><source data-srcset="img/img-photo.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/img-photo.png" alt="" /></picture>
-            </div>
-          </div>
-        </section>
+				<!-- Краткое содержание -->
+				<section class="shor-descr">
+					<div class="shor-descr__container">
+						<div class="shor-descr__body">
+							<h2 class="shor-descr__title">Косметический ремонт квартир</h2>
+							<p class="shor-descr__descr">
+								Косметический ремонт квартирв Нижнем Новгороде – одна из специализаций компании Ремонт Строй. Профессиональное обновление интерьера способно добавить изюминку, эстетичный вид и
+								определенную элегантность вашему интерьеру. Обратившись к профессионалам из нашей компании, уже через пару недель вы сможете любоваться совершенно новым, стильным, аккуратным и
+								комфортабельным интерьером.
+							</p>
+						</div>
+						<div class="shor-descr__view">
+							<picture><source data-srcset="img/img-photo.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/img-photo.png" alt="" /></picture>
+						</div>
+					</div>
+				</section>
 
-        <!-- Примеры работ -->
-        <section class="ex-works">
-          <div class="ex-works__container">
-            <h2 class="ex-works__title">Примеры работ</h2>
-            <p class="ex-works__descr">Посмотрите примеры выполненных нами ремонтов квартир</p>
-            <!-- Слайдер -->
-            <div class="swiper ex-works__swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <picture><source srcset="img/img-photo.webp" type="image/webp"><img src="img/img-photo.png" loading="lazy" alt="" /></picture>
-                  <!-- Информационная часть слайдера -->
-                  <div class="ex-works__head">
-                    <h3 class="ex-works__name">Косметический ремонт в “Где-то”</h3>
-                    <div class="ex-works__items">
-                      <div class="ex-works__item">Бюджет: <span>346 924 ₽</span></div>
-                      <div class="ex-works__item">Площадь: <span>85 м2</span></div>
-                      <div class="ex-works__item">Сроки: <span>45 дней</span></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <picture><source srcset="img/img-photo.webp" type="image/webp"><img src="img/img-photo.png" loading="lazy" alt="" /></picture>
-                  <div class="ex-works__head">
-                    <h3 class="ex-works__name">Косметический ремонт в “Где-то”</h3>
-                    <div class="ex-works__items">
-                      <div class="ex-works__item">Бюджет: <span>346 924 ₽</span></div>
-                      <div class="ex-works__item">Площадь: <span>85 м2</span></div>
-                      <div class="ex-works__item">Сроки: <span>45 дней</span></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <picture><source srcset="img/img-photo.webp" type="image/webp"><img src="img/img-photo.png" loading="lazy" alt="" /></picture>
-                  <div class="ex-works__head">
-                    <h3 class="ex-works__name">Косметический ремонт в “Где-то”</h3>
-                    <div class="ex-works__items">
-                      <div class="ex-works__item">Бюджет: <span>346 924 ₽</span></div>
-                      <div class="ex-works__item">Площадь: <span>85 м2</span></div>
-                      <div class="ex-works__item">Сроки: <span>45 дней</span></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <picture><source srcset="img/img-photo.webp" type="image/webp"><img src="img/img-photo.png" loading="lazy" alt="" /></picture>
-                  <div class="ex-works__head">
-                    <h3 class="ex-works__name">Косметический ремонт в “Где-то”</h3>
-                    <div class="ex-works__items">
-                      <div class="ex-works__item">Бюджет: <span>346 924 ₽</span></div>
-                      <div class="ex-works__item">Площадь: <span>85 м2</span></div>
-                      <div class="ex-works__item">Сроки: <span>45 дней</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="ex-works__arrows">
-              <button class="ex-works__prev"><span></span></button>
-              <div class="ex-works__pagination"></div>
-              <button class="ex-works__next"><span></span></button>
-            </div>
-          </div>
-        </section>
+				<!-- Примеры работ -->
+				<section class="ex-works">
+					<div class="ex-works__container">
+						<h2 class="ex-works__title">Примеры работ</h2>
+						<p class="ex-works__descr">Посмотрите примеры выполненных нами ремонтов квартир</p>
+						<!-- Слайдер -->
+						<div class="swiper ex-works__swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<picture><source srcset="img/img-photo.webp" type="image/webp"><img src="img/img-photo.png" loading="lazy" alt="" /></picture>
+									<!-- Информационная часть слайдера -->
+									<div class="ex-works__head">
+										<h3 class="ex-works__name">Косметический ремонт в “Где-то”</h3>
+										<div class="ex-works__items">
+											<div class="ex-works__item">Бюджет: <span>346 924 ₽</span></div>
+											<div class="ex-works__item">Площадь: <span>85 м2</span></div>
+											<div class="ex-works__item">Сроки: <span>45 дней</span></div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<picture><source srcset="img/img-photo.webp" type="image/webp"><img src="img/img-photo.png" loading="lazy" alt="" /></picture>
+									<div class="ex-works__head">
+										<h3 class="ex-works__name">Косметический ремонт в “Где-то”</h3>
+										<div class="ex-works__items">
+											<div class="ex-works__item">Бюджет: <span>346 924 ₽</span></div>
+											<div class="ex-works__item">Площадь: <span>85 м2</span></div>
+											<div class="ex-works__item">Сроки: <span>45 дней</span></div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<picture><source srcset="img/img-photo.webp" type="image/webp"><img src="img/img-photo.png" loading="lazy" alt="" /></picture>
+									<div class="ex-works__head">
+										<h3 class="ex-works__name">Косметический ремонт в “Где-то”</h3>
+										<div class="ex-works__items">
+											<div class="ex-works__item">Бюджет: <span>346 924 ₽</span></div>
+											<div class="ex-works__item">Площадь: <span>85 м2</span></div>
+											<div class="ex-works__item">Сроки: <span>45 дней</span></div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<picture><source srcset="img/img-photo.webp" type="image/webp"><img src="img/img-photo.png" loading="lazy" alt="" /></picture>
+									<div class="ex-works__head">
+										<h3 class="ex-works__name">Косметический ремонт в “Где-то”</h3>
+										<div class="ex-works__items">
+											<div class="ex-works__item">Бюджет: <span>346 924 ₽</span></div>
+											<div class="ex-works__item">Площадь: <span>85 м2</span></div>
+											<div class="ex-works__item">Сроки: <span>45 дней</span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="ex-works__arrows">
+							<button class="ex-works__prev"><span></span></button>
+							<div class="ex-works__pagination"></div>
+							<button class="ex-works__next"><span></span></button>
+						</div>
+					</div>
+				</section>
 
-        <!-- Оставшаяся информация -->
-        <section class="all-descr">
-          <div class="all-descr__container">
-            <div class="all-descr__wrap">
-              <div class="all-descr__view">
-                <picture><source data-srcset="img/img-photo.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/img-photo.png" alt="" /></picture>
-              </div>
-              <div class="all-descr__body">
-                <h2 class="all-descr__title">Услуга косметический ремонт квартир</h2>
-                <p class="all-descr__descr">
-                  Услуга косметический ремонт квартир предполагает разработку нескольких вариантов стилевого оформления интерьера, согласующихся с пожеланиями заказчика и бюджетом. Наши дизайнеры и
-                  проектанты умеют находить оригинальные решения, не требующие непомерных финансовых затрат.
-                </p>
-              </div>
-            </div>
-            <div class="all-descr__wrap">
-              <div class="all-descr__body">
-                <h2 class="all-descr__title">В перечень услуг нашей компании входит:</h2>
-                <ul class="all-descr__list">
-                  <li>Старой проводки</li>
-                  <li>Перегородок</li>
-                  <li>Напольного покрытия</li>
-                  <li>Потолков</li>
-                  <li>Стяжки</li>
-                  <li>Труб ГВС, ХВС, канализации</li>
-                  <li>Дверей</li>
-                </ul>
-                <a href="#" class="all-descr__btn">
-                  <span>оставить заявку</span>
-                  <img class="lazy" data-src="img/icon-arrow.svg" alt="" />
-                </a>
-              </div>
-              <div class="all-descr__view">
-                <picture><source data-srcset="img/img-photo.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/img-photo.png" alt="" /></picture>
-              </div>
-            </div>
-          </div>
-        </section>
+				<!-- Оставшаяся информация -->
+				<section class="all-descr">
+					<div class="all-descr__container">
+						<div class="all-descr__wrap">
+							<div class="all-descr__view">
+								<picture><source data-srcset="img/img-photo.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/img-photo.png" alt="" /></picture>
+							</div>
+							<div class="all-descr__body">
+								<h2 class="all-descr__title">Услуга косметический ремонт квартир</h2>
+								<p class="all-descr__descr">
+									Услуга косметический ремонт квартир предполагает разработку нескольких вариантов стилевого оформления интерьера, согласующихся с пожеланиями заказчика и бюджетом. Наши дизайнеры и
+									проектанты умеют находить оригинальные решения, не требующие непомерных финансовых затрат.
+								</p>
+							</div>
+						</div>
+						<div class="all-descr__wrap">
+							<div class="all-descr__body">
+								<h2 class="all-descr__title">В перечень услуг нашей компании входит:</h2>
+								<ul class="all-descr__list">
+									<li>Старой проводки</li>
+									<li>Перегородок</li>
+									<li>Напольного покрытия</li>
+									<li>Потолков</li>
+									<li>Стяжки</li>
+									<li>Труб ГВС, ХВС, канализации</li>
+									<li>Дверей</li>
+								</ul>
+								<a href="#" class="all-descr__btn">
+									<span>оставить заявку</span>
+									<img class="lazy" data-src="img/icon-arrow.svg" alt="" />
+								</a>
+							</div>
+							<div class="all-descr__view">
+								<picture><source data-srcset="img/img-photo.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/img-photo.png" alt="" /></picture>
+							</div>
+						</div>
+					</div>
+				</section>
 
-        <!-- Ваша квартира до и после -->
-        <section class="your-flat">
-  <div class="your-flat__container">
-    <div class="your-flat__theme">
-      <img class="lazy" data-src="img/icon-logo.svg" alt="Маленькая иконка логотипа" />
-      <span>ВАША КВАРТИРА ДО И ПОСЛЕ</span>
-    </div>
-    <h2 class="your-flat__title">Как меняется Ваша квартира в процессе ремонта</h2>
-    <p class="your-flat__descr">Уже после несколько недель после начала ремонта</p>
-    <!-- Слайдер -->
-    <div class="swiper your-flat__swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <picture><source srcset="img/img-photo.webp" type="image/webp"><img src="img/img-photo.png" loading="lazy" alt="" /></picture>
-        </div>
-        <div class="swiper-slide">
-          <picture><source srcset="img/img-photo.webp" type="image/webp"><img src="img/img-photo.png" loading="lazy" alt="" /></picture>
-        </div>
-        <div class="swiper-slide">
-          <picture><source srcset="img/img-photo.webp" type="image/webp"><img src="img/img-photo.png" loading="lazy" alt="" /></picture>
-        </div>
-        <div class="swiper-slide">
-          <picture><source srcset="img/img-photo.webp" type="image/webp"><img src="img/img-photo.png" loading="lazy" alt="" /></picture>
-        </div>
-      </div>
-    </div>
-    <div class="your-flat__arrows">
-      <button class="your-flat__prev"><span></span></button>
-      <div class="your-flat__pagination"></div>
-      <button class="your-flat__next"><span></span></button>
-    </div>
-  </div>
-</section>
+								<!-- Ваша квартира до и после -->
+								<section class="your-flat">
+									<div class="your-flat__container">
+										<div class="your-flat__theme">
+											<img class="lazy" data-src="img/icon-logo.svg" alt="Маленькая иконка логотипа" />
+											<span>ВАША КВАРТИРА ДО И ПОСЛЕ</span>
+										</div>
+										<h2 class="your-flat__title">Как меняется Ваша квартира в процессе ремонта</h2>
+										<!-- Слайдер -->
+										<div class="swiper your-flat__swiper">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<div class="your-flat__beer" data-beer-slider>
+														<img src="img/img-photo.png" alt="Before" />
+														<div class="beer-reveal">
+															<img src="img/img-photo-wb.png" alt="After" />
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="your-flat__beer" data-beer-slider>
+														<img src="img/img-photo.png" alt="Before" />
+														<div class="beer-reveal">
+															<img src="img/img-photo-wb.png" alt="After" />
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="your-flat__beer" data-beer-slider>
+														<img src="img/img-photo.png" alt="Before" />
+														<div class="beer-reveal">
+															<img src="img/img-photo-wb.png" alt="After" />
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="your-flat__beer" data-beer-slider>
+														<img src="img/img-photo.png" alt="Before" />
+														<div class="beer-reveal">
+															<img src="img/img-photo-wb.png" alt="After" />
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="your-flat__arrows">
+											<button class="your-flat__prev"><span></span></button>
+											<div class="your-flat__pagination"></div>
+											<button class="your-flat__next"><span></span></button>
+										</div>
+									</div>
+								</section>
 
 
-        <!-- Наши преимущества -->
-        <div class="our-advan">
+				<!-- Наши преимущества -->
+				<div class="our-advan">
   <div class="our-advan__container">
     <div class="our-advan__theme"><img class="lazy" data-src="img/icon-logo.svg" alt="Маленькая иконка логотипа" /><span>НАШИ ПРЕИМУЩЕСТВА</span></div>
     <h2 class="our-advan__title">Преимущества работы с нами</h2>
@@ -392,8 +410,8 @@
 </div>
 
 
-        <!-- Клиенты -->
-        <div class="pl-up">
+				<!-- Клиенты -->
+				<div class="pl-up">
   <picture><source data-srcset="img/placheholder-up.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="lazy" data-src="img/placheholder-up.png" alt="" /></picture>
 </div>
 <section class="clients">
@@ -413,7 +431,7 @@
     <!-- Рейтнг -->
     <div class="clients__ratings">
       <div class="clients__item">
-        <picture><source data-srcset="img/icon-flag.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="clients__icon" class="lazy" data-src="img/icon-flag.png" alt="Флажок рейтинга" /></picture>
+        <picture><source data-srcset="img/icon-flag.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="clients__icon lazy" data-src="img/icon-flag.png" alt="Флажок рейтинга" /></picture>
         <div class="clients__text">
           <p class="clients__lead">Рейтинг на <span>Я</span>ндексе на основе ремонтов</p>
           <div class="clients__starts">
@@ -422,7 +440,7 @@
         </div>
       </div>
       <div class="clients__item">
-        <picture><source data-srcset="img/icon-flag-google.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="clients__icon" class="lazy" data-src="img/icon-flag-google.png" alt="Флажок рейтинга" /></picture>
+        <picture><source data-srcset="img/icon-flag-google.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="clients__icon lazy" data-src="img/icon-flag-google.png" alt="Флажок рейтинга" /></picture>
         <div class="clients__text">
           <p class="clients__lead">Рейтинг на <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span> на основе ремонтов</p>
           <div class="clients__starts">
@@ -437,10 +455,10 @@
   <picture><source srcset="img/placheholder-down.webp" type="image/webp"><img src="img/placheholder-down.png" alt="" /></picture>
 </div>
 
-      </main>
+			</main>
 
-      <!-- Подвал -->
-      <footer class="footer">
+			<!-- Подвал -->
+			<footer class="footer">
   <div class="footer__container">
     <!-- Верхняя часть -->
     <div class="footer__wrapper">
@@ -790,8 +808,9 @@
 </div>
 
 
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20250307082628"></script>
-    <script src="js/app.min.js?_v=20250307082628"></script>
-  </body>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20250310114408"></script>
+		<script src="https://unpkg.com/beerslider/dist/BeerSlider.js?_v=20250310114408"></script>
+		<script src="js/app.min.js?_v=20250310114408"></script>
+	</body>
 </html>

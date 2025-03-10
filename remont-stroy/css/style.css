@@ -118,7 +118,6 @@
 .calc__title,
 .tenet__title,
 .questions__title,
-.partners__title,
 .our-advan__title,
 .step__title,
 .pay-met__title,
@@ -151,8 +150,7 @@
 .not-found .not-found__container .not-found__descr,
 .ex-works__descr,
 .calc__descr,
-.questions__descr,
-.your-flat__descr {
+.questions__descr {
   text-align: center;
   padding: 0rem 1rem;
   color: var(--grey);
@@ -193,7 +191,6 @@
 .calc__theme,
 .tenet__theme,
 .questions__theme,
-.partners__theme,
 .our-advan__theme,
 .step__theme,
 .pay-met__theme,
@@ -220,7 +217,6 @@
 .calc__theme img,
 .tenet__theme img,
 .questions__theme img,
-.partners__theme img,
 .our-advan__theme img,
 .step__theme img,
 .pay-met__theme img,
@@ -233,7 +229,6 @@
   margin-right: 0.94rem;
 }
 
-.partners,
 .clients,
 .types-repairs {
   background-color: #f2f7ff;
@@ -941,24 +936,31 @@ main {
 }
 
 .header__bottom._min .header__service {
-  padding: 0.75rem 0.91rem;
+  padding: 0.75rem 0.4rem;
 }
 
 .header__services {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1200px;
-  max-width: 1200px;
+  width: 100%;
 }
 
 .header__service {
   cursor: pointer;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-flex: 20%;
       -ms-flex: 20% 2;
           flex: 20% 2;
-  padding: 0.91rem;
+  padding: 0.91rem 0.4rem;
   -webkit-transition: padding 0.3s ease;
   transition: padding 0.3s ease;
   color: #474748;
@@ -974,6 +976,14 @@ main {
 .header__service:hover,
 .header__service._active {
   background-color: var(--orange);
+  color: var(--white);
+}
+
+.header__service:last-child {
+  color: #ff0000;
+}
+
+.header__service:last-child:hover {
   color: var(--white);
 }
 
@@ -1058,6 +1068,24 @@ main {
 
 .header__burger::before {
   top: 0;
+}
+
+.header__burger.active span {
+  opacity: 0;
+}
+
+.header__burger.active::after {
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+      -ms-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.header__burger.active::before {
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+      -ms-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .footer {
@@ -2152,6 +2180,23 @@ main {
   opacity: 1;
 }
 
+.your-flat__beer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+  -ms-touch-action: none;
+      touch-action: none;
+}
+
+.your-flat__beer img {
+  pointer-events: none;
+}
+
+.your-flat__beer .beer-reveal {
+  height: 100%;
+}
+
 .your-flat__arrows {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2759,25 +2804,6 @@ main {
   line-height: clamp(1rem, 2vw, 1.25rem);
 }
 
-.partners__items {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[5];
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 2rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.partners__items img {
-  margin: 0 auto;
-  width: 7.1875rem;
-  height: 6.84688rem;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .questions__items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3272,9 +3298,21 @@ main {
   text-align: center;
 }
 
+.fix-btns__item:nth-child(1) {
+  background-color: #ff0000;
+}
+
 .fix-btns__item:nth-child(1) .fix-btns__icon {
   width: 2.5rem;
   height: 2.5rem;
+}
+
+.fix-btns__item:nth-child(3) {
+  background-color: #29b6f6;
+}
+
+.fix-btns__item:nth-child(4) {
+  background-color: #40c351;
 }
 
 .fix-btns__item:last-child {
@@ -5898,6 +5936,10 @@ main {
   border-top: 1px solid transparent;
 }
 
+.md-menu__link:nth-of-type(6) {
+  color: #ff0000;
+}
+
 .md-menu__services {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6093,11 +6135,6 @@ main {
   .header__social {
     width: 2.25rem;
     height: 2.25rem;
-  }
-
-  .header__services {
-    width: 1000px;
-    max-width: 1000px;
   }
 
   .header__service {
@@ -6336,6 +6373,10 @@ main {
   .header__icon {
     width: 2.5875rem;
     height: 3.2005rem;
+  }
+
+  .header__service {
+    font-size: 0.85rem;
   }
 
   .hero__body .hero__title {
@@ -7719,6 +7760,12 @@ main {
     line-height: 1.4rem;
   }
 
+  .hero__body .hero__descr {
+    font-size: 0.88rem;
+    line-height: 1.2rem;
+    margin-bottom: 1.25rem;
+  }
+
   .hero__calc .hero__filter {
     display: -ms-grid;
     display: grid;
@@ -7875,20 +7922,6 @@ main {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .partners__items {
-    padding: 0 2rem;
-    -ms-grid-columns: (1fr)[3];
-    grid-template-columns: repeat(3, 1fr);
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
-  .partners__items img {
-    width: 9.1875rem;
-    height: 8.84688rem;
-  }
-
   .questions__items {
     grid-gap: 1.5rem;
   }
@@ -7949,8 +7982,9 @@ main {
   }
 
   .fix-btns__item {
-    height: 3.5rem;
-    width: 3.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-bottom: 0.25rem;
   }
 
   .fix-btns__item span {
@@ -8298,8 +8332,9 @@ main {
   }
 
   .hero__body .hero__title {
-    font-size: 2.8rem;
-    line-height: 3.1rem;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    margin-bottom: 1rem;
   }
 
   .hero__body .hero__call::before {
@@ -8316,12 +8351,37 @@ main {
   }
 
   .hero__calc {
-    padding: 2rem 1rem 1.5rem 1rem;
+    padding: 1.5rem 1rem 1.5rem 1rem;
   }
 
   .hero__calc .hero__title {
-    font-size: 1.75rem;
-    line-height: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero__calc .hero__wrap:nth-of-type(3) .hero__sub-title {
+    margin-bottom: 0;
+  }
+
+  .hero__calc .hero__sub-title {
+    margin-bottom: 0.5rem;
+  }
+
+  .hero__calc .hero__filter {
+    gap: 0.75rem;
+  }
+
+  .hero__calc .hero__radio span {
+    font-size: 0.88rem;
+    line-height: 1rem;
+  }
+
+  .hero__calc .hero__operation .hero__input {
+    border-radius: 0.4rem;
+    width: 4rem;
+    line-height: 1.2rem;
+    padding: 0.35rem 1rem;
   }
 
   .hero__calc .hero__submit {
@@ -8476,11 +8536,6 @@ main {
   .step__btn img {
     height: 9px;
     width: 9px;
-  }
-
-  .partners__items {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
   }
 
   .questions__items {
