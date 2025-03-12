@@ -94,7 +94,7 @@
   --blue: #f6f6f6;
   --grey: #737373;
   --orange-dark: #ea5501;
-  --progress: 13.571428571428571%;
+  --progress: 0%;
 }
 
 .politics__title,
@@ -1918,14 +1918,6 @@ main {
   border-bottom: 1px solid #e8e8e8;
 }
 
-.types-repairs__lead {
-  color: var(--dark);
-  font-size: 1.625rem;
-  line-height: 2rem;
-  font-weight: 700;
-  margin-bottom: 0.62rem;
-}
-
 .types-repairs__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3213,9 +3205,6 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-size: 0.8125rem;
   line-height: 1.5rem;
   font-weight: 600;
@@ -3246,11 +3235,15 @@ main {
 .feedback__agree .feedback__checkmark {
   height: 1rem;
   width: 1rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 1rem;
+          flex: 0 0 1rem;
   border: 2px solid #e3e3e3;
   border-radius: 5px;
   display: inline-block;
   position: relative;
   margin-right: 8px;
+  margin-top: 5px;
 }
 
 .feedback__agree .feedback__link {
@@ -5567,9 +5560,6 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -5603,11 +5593,15 @@ main {
 .modal__agree .modal__checkmark {
   height: 1rem;
   width: 1rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 1rem;
+          flex: 0 0 1rem;
   border: 2px solid #e3e3e3;
   border-radius: 5px;
   display: inline-block;
   position: relative;
   margin-right: 8px;
+  margin-top: 5px;
 }
 
 .modal__agree .modal__link {
@@ -7818,12 +7812,6 @@ main {
     font-size: 0.8rem;
   }
 
-  .types-repairs__lead {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    line-height: 1.8rem;
-  }
-
   .types-repairs__list {
     font-size: 0.88rem;
     line-height: 1rem;
@@ -8479,11 +8467,6 @@ main {
     line-height: 2.5rem;
   }
 
-  .types-repairs__lead {
-    font-size: 1.3rem;
-    line-height: 1.5rem;
-  }
-
   .types-repairs__wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -9031,12 +9014,6 @@ main {
   .types-repairs__text {
     font-size: 0.7rem;
     line-height: 1rem;
-  }
-
-  .types-repairs__lead {
-    font-size: 1rem;
-    line-height: 1.3rem;
-    margin-bottom: 0.2rem;
   }
 
   .types-repairs__list li::before {
