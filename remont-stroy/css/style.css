@@ -1815,6 +1815,11 @@ main {
   padding: 0rem 5.5rem;
 }
 
+.types-repairs__descr a {
+  text-decoration: underline;
+  color: var(--orange);
+}
+
 .types-repairs__tabs {
   display: -webkit-box;
   display: -ms-flexbox;
